@@ -1,0 +1,929 @@
+<html lang="ru"><head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/public/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/public/favicon-16x16.png">
+<link rel="manifest" href="/public/site.webmanifest">
+<link rel="mask-icon" href="/public/safari-pinned-tab.svg" color="#2f80ed">
+<link rel="shortcut icon" href="/public/favicon.ico">
+<meta name="apple-mobile-web-app-title" content="Вся Россия">
+<meta name="application-name" content="Вся Россия">
+<meta name="msapplication-TileColor" content="#2b5797">
+<meta name="msapplication-config" content="/public/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<title>
+    Вся Россия | Московская область
+</title>
+
+
+<link rel="stylesheet" href="/static/index.css">
+
+<style id="smooth-dnd-style-definitions" type="text/css">.smooth-dnd-container{position:relative;min-height:30px;min-width:30px;}.smooth-dnd-container.horizontal{display:table;}.smooth-dnd-container.horizontal > .smooth-dnd-stretcher-element{display:inline-block;}.smooth-dnd-container.horizontal > .smooth-dnd-draggable-wrapper{height:100%;display:table-cell;vertical-align:top;}.smooth-dnd-container.vertical > .smooth-dnd-draggable-wrapper{overflow:hidden;display:block;}.smooth-dnd-draggable-wrapper{box-sizing:border-box;}.smooth-dnd-draggable-wrapper.horizontal{height:100%;display:table-cell;vertical-align:top;}.smooth-dnd-draggable-wrapper.vertical{overflow:hidden;display:block;}.smooth-dnd-draggable-wrapper.animated{transition:transform ease;}.smooth-dnd-ghost{box-sizing:border-box;}.smooth-dnd-ghost.animated{transition:all ease-in-out;}.smooth-dnd-ghost *{pointer-events:none;}.smooth-dnd-disable-touch-action *{touch-action:none;-ms-touch-action:none;}.smooth-dnd-no-user-select{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}.smooth-dnd-drop-preview-inner-class{flex:1;}.smooth-dnd-container.horizontal > .smooth-dnd-drop-preview-constant-class{height:100%;overflow:hidden;display:table-cell;vertical-align:top;}.smooth-dnd-container.vertical > .smooth-dnd-drop-preview-constant-class{overflow:hidden;display:block;width:100%;}.smooth-dnd-drop-preview-flex-container-class{width:100%;height:100%;display:flex;justify-content:stretch;align-items:stretch;}.smooth-dnd-drop-preview-default-class{background-color:rgba(150, 150, 150, 0.1);border:1px solid #ccc;}</style><style type="text/css">.resize-observer[data-v-8859cc6c]{position:absolute;top:0;left:0;z-index:-1;width:100%;height:100%;border:none;background-color:transparent;pointer-events:none;display:block;overflow:hidden;opacity:0}.resize-observer[data-v-8859cc6c] object{display:block;position:absolute;top:0;left:0;height:100%;width:100%;overflow:hidden;pointer-events:none;z-index:-1}</style><style type="text/css" id="vuetify-theme-stylesheet">:root {
+  --v-anchor-base: #2f80ed;
+  --v-primary-base: #2f80ed;
+  --v-primary-lighten5: #d8ffff;
+  --v-primary-lighten4: #b9ecff;
+  --v-primary-lighten3: #9ad0ff;
+  --v-primary-lighten2: #7ab4ff;
+  --v-primary-lighten1: #589aff;
+  --v-primary-darken1: #0067d0;
+  --v-primary-darken2: #0050b4;
+  --v-primary-darken3: #003a99;
+  --v-primary-darken4: #00267e;
+  --v-secondary-base: #e0f2f1;
+  --v-secondary-lighten5: #ffffff;
+  --v-secondary-lighten4: #ffffff;
+  --v-secondary-lighten3: #ffffff;
+  --v-secondary-lighten2: #ffffff;
+  --v-secondary-lighten1: #fdffff;
+  --v-secondary-darken1: #c4d6d5;
+  --v-secondary-darken2: #a9bab9;
+  --v-secondary-darken3: #8e9f9e;
+  --v-secondary-darken4: #758584;
+  --v-accent-base: #2f80ed;
+  --v-accent-lighten5: #d8ffff;
+  --v-accent-lighten4: #b9ecff;
+  --v-accent-lighten3: #9ad0ff;
+  --v-accent-lighten2: #7ab4ff;
+  --v-accent-lighten1: #589aff;
+  --v-accent-darken1: #0067d0;
+  --v-accent-darken2: #0050b4;
+  --v-accent-darken3: #003a99;
+  --v-accent-darken4: #00267e;
+  --v-error-base: #f84040;
+  --v-error-lighten5: #ffd5c0;
+  --v-error-lighten4: #ffb7a5;
+  --v-error-lighten3: #ff9a8a;
+  --v-error-lighten2: #ff7d70;
+  --v-error-lighten1: #ff5f58;
+  --v-error-darken1: #d71829;
+  --v-error-darken2: #b70014;
+  --v-error-darken3: #970000;
+  --v-error-darken4: #790000;
+  --v-info-base: #5bc0de;
+  --v-info-lighten5: #f1ffff;
+  --v-info-lighten4: #d3ffff;
+  --v-info-lighten3: #b5ffff;
+  --v-info-lighten2: #97f9ff;
+  --v-info-lighten1: #7adcfb;
+  --v-info-darken1: #3aa5c2;
+  --v-info-darken2: #018aa7;
+  --v-info-darken3: #00718c;
+  --v-info-darken4: #005873;
+  --v-success-base: #5cb85c;
+  --v-success-lighten5: #ebffe3;
+  --v-success-lighten4: #cdffc7;
+  --v-success-lighten3: #b1ffab;
+  --v-success-lighten2: #94f190;
+  --v-success-lighten1: #78d476;
+  --v-success-darken1: #3f9d43;
+  --v-success-darken2: #1e822a;
+  --v-success-darken3: #006810;
+  --v-success-darken4: #004f00;
+  --v-warning-base: #f0ad4e;
+  --v-warning-lighten5: #ffffd6;
+  --v-warning-lighten4: #ffffba;
+  --v-warning-lighten3: #ffff9e;
+  --v-warning-lighten2: #ffe483;
+  --v-warning-lighten1: #ffc868;
+  --v-warning-darken1: #d29234;
+  --v-warning-darken2: #b47917;
+  --v-warning-darken3: #966000;
+  --v-warning-darken4: #7a4800;
+}
+
+.v-application a { color: var(--v-anchor-base); }
+.v-application .primary {
+  background-color: var(--v-primary-base) !important;
+  border-color: var(--v-primary-base) !important;
+}
+.v-application .primary--text {
+  color: var(--v-primary-base) !important;
+  caret-color: var(--v-primary-base) !important;
+}
+.v-application .primary.lighten-5 {
+  background-color: var(--v-primary-lighten5) !important;
+  border-color: var(--v-primary-lighten5) !important;
+}
+.v-application .primary--text.text--lighten-5 {
+  color: var(--v-primary-lighten5) !important;
+  caret-color: var(--v-primary-lighten5) !important;
+}
+.v-application .primary.lighten-4 {
+  background-color: var(--v-primary-lighten4) !important;
+  border-color: var(--v-primary-lighten4) !important;
+}
+.v-application .primary--text.text--lighten-4 {
+  color: var(--v-primary-lighten4) !important;
+  caret-color: var(--v-primary-lighten4) !important;
+}
+.v-application .primary.lighten-3 {
+  background-color: var(--v-primary-lighten3) !important;
+  border-color: var(--v-primary-lighten3) !important;
+}
+.v-application .primary--text.text--lighten-3 {
+  color: var(--v-primary-lighten3) !important;
+  caret-color: var(--v-primary-lighten3) !important;
+}
+.v-application .primary.lighten-2 {
+  background-color: var(--v-primary-lighten2) !important;
+  border-color: var(--v-primary-lighten2) !important;
+}
+.v-application .primary--text.text--lighten-2 {
+  color: var(--v-primary-lighten2) !important;
+  caret-color: var(--v-primary-lighten2) !important;
+}
+.v-application .primary.lighten-1 {
+  background-color: var(--v-primary-lighten1) !important;
+  border-color: var(--v-primary-lighten1) !important;
+}
+.v-application .primary--text.text--lighten-1 {
+  color: var(--v-primary-lighten1) !important;
+  caret-color: var(--v-primary-lighten1) !important;
+}
+.v-application .primary.darken-1 {
+  background-color: var(--v-primary-darken1) !important;
+  border-color: var(--v-primary-darken1) !important;
+}
+.v-application .primary--text.text--darken-1 {
+  color: var(--v-primary-darken1) !important;
+  caret-color: var(--v-primary-darken1) !important;
+}
+.v-application .primary.darken-2 {
+  background-color: var(--v-primary-darken2) !important;
+  border-color: var(--v-primary-darken2) !important;
+}
+.v-application .primary--text.text--darken-2 {
+  color: var(--v-primary-darken2) !important;
+  caret-color: var(--v-primary-darken2) !important;
+}
+.v-application .primary.darken-3 {
+  background-color: var(--v-primary-darken3) !important;
+  border-color: var(--v-primary-darken3) !important;
+}
+.v-application .primary--text.text--darken-3 {
+  color: var(--v-primary-darken3) !important;
+  caret-color: var(--v-primary-darken3) !important;
+}
+.v-application .primary.darken-4 {
+  background-color: var(--v-primary-darken4) !important;
+  border-color: var(--v-primary-darken4) !important;
+}
+.v-application .primary--text.text--darken-4 {
+  color: var(--v-primary-darken4) !important;
+  caret-color: var(--v-primary-darken4) !important;
+}
+.v-application .secondary {
+  background-color: var(--v-secondary-base) !important;
+  border-color: var(--v-secondary-base) !important;
+}
+.v-application .secondary--text {
+  color: var(--v-secondary-base) !important;
+  caret-color: var(--v-secondary-base) !important;
+}
+.v-application .secondary.lighten-5 {
+  background-color: var(--v-secondary-lighten5) !important;
+  border-color: var(--v-secondary-lighten5) !important;
+}
+.v-application .secondary--text.text--lighten-5 {
+  color: var(--v-secondary-lighten5) !important;
+  caret-color: var(--v-secondary-lighten5) !important;
+}
+.v-application .secondary.lighten-4 {
+  background-color: var(--v-secondary-lighten4) !important;
+  border-color: var(--v-secondary-lighten4) !important;
+}
+.v-application .secondary--text.text--lighten-4 {
+  color: var(--v-secondary-lighten4) !important;
+  caret-color: var(--v-secondary-lighten4) !important;
+}
+.v-application .secondary.lighten-3 {
+  background-color: var(--v-secondary-lighten3) !important;
+  border-color: var(--v-secondary-lighten3) !important;
+}
+.v-application .secondary--text.text--lighten-3 {
+  color: var(--v-secondary-lighten3) !important;
+  caret-color: var(--v-secondary-lighten3) !important;
+}
+.v-application .secondary.lighten-2 {
+  background-color: var(--v-secondary-lighten2) !important;
+  border-color: var(--v-secondary-lighten2) !important;
+}
+.v-application .secondary--text.text--lighten-2 {
+  color: var(--v-secondary-lighten2) !important;
+  caret-color: var(--v-secondary-lighten2) !important;
+}
+.v-application .secondary.lighten-1 {
+  background-color: var(--v-secondary-lighten1) !important;
+  border-color: var(--v-secondary-lighten1) !important;
+}
+.v-application .secondary--text.text--lighten-1 {
+  color: var(--v-secondary-lighten1) !important;
+  caret-color: var(--v-secondary-lighten1) !important;
+}
+.v-application .secondary.darken-1 {
+  background-color: var(--v-secondary-darken1) !important;
+  border-color: var(--v-secondary-darken1) !important;
+}
+.v-application .secondary--text.text--darken-1 {
+  color: var(--v-secondary-darken1) !important;
+  caret-color: var(--v-secondary-darken1) !important;
+}
+.v-application .secondary.darken-2 {
+  background-color: var(--v-secondary-darken2) !important;
+  border-color: var(--v-secondary-darken2) !important;
+}
+.v-application .secondary--text.text--darken-2 {
+  color: var(--v-secondary-darken2) !important;
+  caret-color: var(--v-secondary-darken2) !important;
+}
+.v-application .secondary.darken-3 {
+  background-color: var(--v-secondary-darken3) !important;
+  border-color: var(--v-secondary-darken3) !important;
+}
+.v-application .secondary--text.text--darken-3 {
+  color: var(--v-secondary-darken3) !important;
+  caret-color: var(--v-secondary-darken3) !important;
+}
+.v-application .secondary.darken-4 {
+  background-color: var(--v-secondary-darken4) !important;
+  border-color: var(--v-secondary-darken4) !important;
+}
+.v-application .secondary--text.text--darken-4 {
+  color: var(--v-secondary-darken4) !important;
+  caret-color: var(--v-secondary-darken4) !important;
+}
+.v-application .accent {
+  background-color: var(--v-accent-base) !important;
+  border-color: var(--v-accent-base) !important;
+}
+.v-application .accent--text {
+  color: var(--v-accent-base) !important;
+  caret-color: var(--v-accent-base) !important;
+}
+.v-application .accent.lighten-5 {
+  background-color: var(--v-accent-lighten5) !important;
+  border-color: var(--v-accent-lighten5) !important;
+}
+.v-application .accent--text.text--lighten-5 {
+  color: var(--v-accent-lighten5) !important;
+  caret-color: var(--v-accent-lighten5) !important;
+}
+.v-application .accent.lighten-4 {
+  background-color: var(--v-accent-lighten4) !important;
+  border-color: var(--v-accent-lighten4) !important;
+}
+.v-application .accent--text.text--lighten-4 {
+  color: var(--v-accent-lighten4) !important;
+  caret-color: var(--v-accent-lighten4) !important;
+}
+.v-application .accent.lighten-3 {
+  background-color: var(--v-accent-lighten3) !important;
+  border-color: var(--v-accent-lighten3) !important;
+}
+.v-application .accent--text.text--lighten-3 {
+  color: var(--v-accent-lighten3) !important;
+  caret-color: var(--v-accent-lighten3) !important;
+}
+.v-application .accent.lighten-2 {
+  background-color: var(--v-accent-lighten2) !important;
+  border-color: var(--v-accent-lighten2) !important;
+}
+.v-application .accent--text.text--lighten-2 {
+  color: var(--v-accent-lighten2) !important;
+  caret-color: var(--v-accent-lighten2) !important;
+}
+.v-application .accent.lighten-1 {
+  background-color: var(--v-accent-lighten1) !important;
+  border-color: var(--v-accent-lighten1) !important;
+}
+.v-application .accent--text.text--lighten-1 {
+  color: var(--v-accent-lighten1) !important;
+  caret-color: var(--v-accent-lighten1) !important;
+}
+.v-application .accent.darken-1 {
+  background-color: var(--v-accent-darken1) !important;
+  border-color: var(--v-accent-darken1) !important;
+}
+.v-application .accent--text.text--darken-1 {
+  color: var(--v-accent-darken1) !important;
+  caret-color: var(--v-accent-darken1) !important;
+}
+.v-application .accent.darken-2 {
+  background-color: var(--v-accent-darken2) !important;
+  border-color: var(--v-accent-darken2) !important;
+}
+.v-application .accent--text.text--darken-2 {
+  color: var(--v-accent-darken2) !important;
+  caret-color: var(--v-accent-darken2) !important;
+}
+.v-application .accent.darken-3 {
+  background-color: var(--v-accent-darken3) !important;
+  border-color: var(--v-accent-darken3) !important;
+}
+.v-application .accent--text.text--darken-3 {
+  color: var(--v-accent-darken3) !important;
+  caret-color: var(--v-accent-darken3) !important;
+}
+.v-application .accent.darken-4 {
+  background-color: var(--v-accent-darken4) !important;
+  border-color: var(--v-accent-darken4) !important;
+}
+.v-application .accent--text.text--darken-4 {
+  color: var(--v-accent-darken4) !important;
+  caret-color: var(--v-accent-darken4) !important;
+}
+.v-application .error {
+  background-color: var(--v-error-base) !important;
+  border-color: var(--v-error-base) !important;
+}
+.v-application .error--text {
+  color: var(--v-error-base) !important;
+  caret-color: var(--v-error-base) !important;
+}
+.v-application .error.lighten-5 {
+  background-color: var(--v-error-lighten5) !important;
+  border-color: var(--v-error-lighten5) !important;
+}
+.v-application .error--text.text--lighten-5 {
+  color: var(--v-error-lighten5) !important;
+  caret-color: var(--v-error-lighten5) !important;
+}
+.v-application .error.lighten-4 {
+  background-color: var(--v-error-lighten4) !important;
+  border-color: var(--v-error-lighten4) !important;
+}
+.v-application .error--text.text--lighten-4 {
+  color: var(--v-error-lighten4) !important;
+  caret-color: var(--v-error-lighten4) !important;
+}
+.v-application .error.lighten-3 {
+  background-color: var(--v-error-lighten3) !important;
+  border-color: var(--v-error-lighten3) !important;
+}
+.v-application .error--text.text--lighten-3 {
+  color: var(--v-error-lighten3) !important;
+  caret-color: var(--v-error-lighten3) !important;
+}
+.v-application .error.lighten-2 {
+  background-color: var(--v-error-lighten2) !important;
+  border-color: var(--v-error-lighten2) !important;
+}
+.v-application .error--text.text--lighten-2 {
+  color: var(--v-error-lighten2) !important;
+  caret-color: var(--v-error-lighten2) !important;
+}
+.v-application .error.lighten-1 {
+  background-color: var(--v-error-lighten1) !important;
+  border-color: var(--v-error-lighten1) !important;
+}
+.v-application .error--text.text--lighten-1 {
+  color: var(--v-error-lighten1) !important;
+  caret-color: var(--v-error-lighten1) !important;
+}
+.v-application .error.darken-1 {
+  background-color: var(--v-error-darken1) !important;
+  border-color: var(--v-error-darken1) !important;
+}
+.v-application .error--text.text--darken-1 {
+  color: var(--v-error-darken1) !important;
+  caret-color: var(--v-error-darken1) !important;
+}
+.v-application .error.darken-2 {
+  background-color: var(--v-error-darken2) !important;
+  border-color: var(--v-error-darken2) !important;
+}
+.v-application .error--text.text--darken-2 {
+  color: var(--v-error-darken2) !important;
+  caret-color: var(--v-error-darken2) !important;
+}
+.v-application .error.darken-3 {
+  background-color: var(--v-error-darken3) !important;
+  border-color: var(--v-error-darken3) !important;
+}
+.v-application .error--text.text--darken-3 {
+  color: var(--v-error-darken3) !important;
+  caret-color: var(--v-error-darken3) !important;
+}
+.v-application .error.darken-4 {
+  background-color: var(--v-error-darken4) !important;
+  border-color: var(--v-error-darken4) !important;
+}
+.v-application .error--text.text--darken-4 {
+  color: var(--v-error-darken4) !important;
+  caret-color: var(--v-error-darken4) !important;
+}
+.v-application .info {
+  background-color: var(--v-info-base) !important;
+  border-color: var(--v-info-base) !important;
+}
+.v-application .info--text {
+  color: var(--v-info-base) !important;
+  caret-color: var(--v-info-base) !important;
+}
+.v-application .info.lighten-5 {
+  background-color: var(--v-info-lighten5) !important;
+  border-color: var(--v-info-lighten5) !important;
+}
+.v-application .info--text.text--lighten-5 {
+  color: var(--v-info-lighten5) !important;
+  caret-color: var(--v-info-lighten5) !important;
+}
+.v-application .info.lighten-4 {
+  background-color: var(--v-info-lighten4) !important;
+  border-color: var(--v-info-lighten4) !important;
+}
+.v-application .info--text.text--lighten-4 {
+  color: var(--v-info-lighten4) !important;
+  caret-color: var(--v-info-lighten4) !important;
+}
+.v-application .info.lighten-3 {
+  background-color: var(--v-info-lighten3) !important;
+  border-color: var(--v-info-lighten3) !important;
+}
+.v-application .info--text.text--lighten-3 {
+  color: var(--v-info-lighten3) !important;
+  caret-color: var(--v-info-lighten3) !important;
+}
+.v-application .info.lighten-2 {
+  background-color: var(--v-info-lighten2) !important;
+  border-color: var(--v-info-lighten2) !important;
+}
+.v-application .info--text.text--lighten-2 {
+  color: var(--v-info-lighten2) !important;
+  caret-color: var(--v-info-lighten2) !important;
+}
+.v-application .info.lighten-1 {
+  background-color: var(--v-info-lighten1) !important;
+  border-color: var(--v-info-lighten1) !important;
+}
+.v-application .info--text.text--lighten-1 {
+  color: var(--v-info-lighten1) !important;
+  caret-color: var(--v-info-lighten1) !important;
+}
+.v-application .info.darken-1 {
+  background-color: var(--v-info-darken1) !important;
+  border-color: var(--v-info-darken1) !important;
+}
+.v-application .info--text.text--darken-1 {
+  color: var(--v-info-darken1) !important;
+  caret-color: var(--v-info-darken1) !important;
+}
+.v-application .info.darken-2 {
+  background-color: var(--v-info-darken2) !important;
+  border-color: var(--v-info-darken2) !important;
+}
+.v-application .info--text.text--darken-2 {
+  color: var(--v-info-darken2) !important;
+  caret-color: var(--v-info-darken2) !important;
+}
+.v-application .info.darken-3 {
+  background-color: var(--v-info-darken3) !important;
+  border-color: var(--v-info-darken3) !important;
+}
+.v-application .info--text.text--darken-3 {
+  color: var(--v-info-darken3) !important;
+  caret-color: var(--v-info-darken3) !important;
+}
+.v-application .info.darken-4 {
+  background-color: var(--v-info-darken4) !important;
+  border-color: var(--v-info-darken4) !important;
+}
+.v-application .info--text.text--darken-4 {
+  color: var(--v-info-darken4) !important;
+  caret-color: var(--v-info-darken4) !important;
+}
+.v-application .success {
+  background-color: var(--v-success-base) !important;
+  border-color: var(--v-success-base) !important;
+}
+.v-application .success--text {
+  color: var(--v-success-base) !important;
+  caret-color: var(--v-success-base) !important;
+}
+.v-application .success.lighten-5 {
+  background-color: var(--v-success-lighten5) !important;
+  border-color: var(--v-success-lighten5) !important;
+}
+.v-application .success--text.text--lighten-5 {
+  color: var(--v-success-lighten5) !important;
+  caret-color: var(--v-success-lighten5) !important;
+}
+.v-application .success.lighten-4 {
+  background-color: var(--v-success-lighten4) !important;
+  border-color: var(--v-success-lighten4) !important;
+}
+.v-application .success--text.text--lighten-4 {
+  color: var(--v-success-lighten4) !important;
+  caret-color: var(--v-success-lighten4) !important;
+}
+.v-application .success.lighten-3 {
+  background-color: var(--v-success-lighten3) !important;
+  border-color: var(--v-success-lighten3) !important;
+}
+.v-application .success--text.text--lighten-3 {
+  color: var(--v-success-lighten3) !important;
+  caret-color: var(--v-success-lighten3) !important;
+}
+.v-application .success.lighten-2 {
+  background-color: var(--v-success-lighten2) !important;
+  border-color: var(--v-success-lighten2) !important;
+}
+.v-application .success--text.text--lighten-2 {
+  color: var(--v-success-lighten2) !important;
+  caret-color: var(--v-success-lighten2) !important;
+}
+.v-application .success.lighten-1 {
+  background-color: var(--v-success-lighten1) !important;
+  border-color: var(--v-success-lighten1) !important;
+}
+.v-application .success--text.text--lighten-1 {
+  color: var(--v-success-lighten1) !important;
+  caret-color: var(--v-success-lighten1) !important;
+}
+.v-application .success.darken-1 {
+  background-color: var(--v-success-darken1) !important;
+  border-color: var(--v-success-darken1) !important;
+}
+.v-application .success--text.text--darken-1 {
+  color: var(--v-success-darken1) !important;
+  caret-color: var(--v-success-darken1) !important;
+}
+.v-application .success.darken-2 {
+  background-color: var(--v-success-darken2) !important;
+  border-color: var(--v-success-darken2) !important;
+}
+.v-application .success--text.text--darken-2 {
+  color: var(--v-success-darken2) !important;
+  caret-color: var(--v-success-darken2) !important;
+}
+.v-application .success.darken-3 {
+  background-color: var(--v-success-darken3) !important;
+  border-color: var(--v-success-darken3) !important;
+}
+.v-application .success--text.text--darken-3 {
+  color: var(--v-success-darken3) !important;
+  caret-color: var(--v-success-darken3) !important;
+}
+.v-application .success.darken-4 {
+  background-color: var(--v-success-darken4) !important;
+  border-color: var(--v-success-darken4) !important;
+}
+.v-application .success--text.text--darken-4 {
+  color: var(--v-success-darken4) !important;
+  caret-color: var(--v-success-darken4) !important;
+}
+.v-application .warning {
+  background-color: var(--v-warning-base) !important;
+  border-color: var(--v-warning-base) !important;
+}
+.v-application .warning--text {
+  color: var(--v-warning-base) !important;
+  caret-color: var(--v-warning-base) !important;
+}
+.v-application .warning.lighten-5 {
+  background-color: var(--v-warning-lighten5) !important;
+  border-color: var(--v-warning-lighten5) !important;
+}
+.v-application .warning--text.text--lighten-5 {
+  color: var(--v-warning-lighten5) !important;
+  caret-color: var(--v-warning-lighten5) !important;
+}
+.v-application .warning.lighten-4 {
+  background-color: var(--v-warning-lighten4) !important;
+  border-color: var(--v-warning-lighten4) !important;
+}
+.v-application .warning--text.text--lighten-4 {
+  color: var(--v-warning-lighten4) !important;
+  caret-color: var(--v-warning-lighten4) !important;
+}
+.v-application .warning.lighten-3 {
+  background-color: var(--v-warning-lighten3) !important;
+  border-color: var(--v-warning-lighten3) !important;
+}
+.v-application .warning--text.text--lighten-3 {
+  color: var(--v-warning-lighten3) !important;
+  caret-color: var(--v-warning-lighten3) !important;
+}
+.v-application .warning.lighten-2 {
+  background-color: var(--v-warning-lighten2) !important;
+  border-color: var(--v-warning-lighten2) !important;
+}
+.v-application .warning--text.text--lighten-2 {
+  color: var(--v-warning-lighten2) !important;
+  caret-color: var(--v-warning-lighten2) !important;
+}
+.v-application .warning.lighten-1 {
+  background-color: var(--v-warning-lighten1) !important;
+  border-color: var(--v-warning-lighten1) !important;
+}
+.v-application .warning--text.text--lighten-1 {
+  color: var(--v-warning-lighten1) !important;
+  caret-color: var(--v-warning-lighten1) !important;
+}
+.v-application .warning.darken-1 {
+  background-color: var(--v-warning-darken1) !important;
+  border-color: var(--v-warning-darken1) !important;
+}
+.v-application .warning--text.text--darken-1 {
+  color: var(--v-warning-darken1) !important;
+  caret-color: var(--v-warning-darken1) !important;
+}
+.v-application .warning.darken-2 {
+  background-color: var(--v-warning-darken2) !important;
+  border-color: var(--v-warning-darken2) !important;
+}
+.v-application .warning--text.text--darken-2 {
+  color: var(--v-warning-darken2) !important;
+  caret-color: var(--v-warning-darken2) !important;
+}
+.v-application .warning.darken-3 {
+  background-color: var(--v-warning-darken3) !important;
+  border-color: var(--v-warning-darken3) !important;
+}
+.v-application .warning--text.text--darken-3 {
+  color: var(--v-warning-darken3) !important;
+  caret-color: var(--v-warning-darken3) !important;
+}
+.v-application .warning.darken-4 {
+  background-color: var(--v-warning-darken4) !important;
+  border-color: var(--v-warning-darken4) !important;
+}
+.v-application .warning--text.text--darken-4 {
+  color: var(--v-warning-darken4) !important;
+  caret-color: var(--v-warning-darken4) !important;
+}</style></head>
+<body>
+
+<div data-v-5680dfe2="" data-app="true" class="v-application app v-application--is-ltr theme--light" id="app"><div class="v-overlay v-overlay--active theme--dark" style="z-index: 203;"><div class="v-overlay__scrim" style="opacity: 0.46; background-color: rgb(33, 33, 33); border-color: rgb(33, 33, 33);"></div><div class="v-overlay__content"></div></div><div class="v-overlay v-overlay--active theme--dark" style="z-index: 201;"><div class="v-overlay__scrim" style="opacity: 0.46; background-color: rgb(33, 33, 33); border-color: rgb(33, 33, 33);"></div><div class="v-overlay__content"></div></div><div class="v-application--wrap"><header data-v-1250258c="" data-v-5680dfe2="" class="v-sheet theme--light v-toolbar v-app-bar v-app-bar--fixed" data-booted="true" style="height: 64px; margin-top: 0px; transform: translateY(0px); left: 0px; right: 0px;"><div class="v-toolbar__content" style="height: 64px;"><div data-v-1250258c="" class="v-toolbar__items logo-items"><div data-v-1250258c="" class="v-toolbar__title"><img data-v-1250258c="" src="data:image/png;base64,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" class="logo">
+            Мобилизация
+          </div> <div data-v-34ed5dc6="" data-v-1250258c="" role="dialog" class="v-dialog__container"><!----></div><button data-v-1250258c="" type="button" class="collapse v-btn v-btn--text theme--light v-size--default primary--text"><span class="v-btn__content">
+                      Московская область<i data-v-1250258c="" aria-hidden="true" class="v-icon notranslate v-icon--dense im im-circle-down theme--light"></i></span></button></div> <div data-v-1250258c="" class="spacer"></div> <div data-v-1250258c="" class="v-toolbar__items menu-items"><button data-v-1250258c="" type="button" class="collapse v-btn v-btn--text theme--light v-size--default primary--text"><span class="v-btn__content">
+                            Система<i data-v-1250258c="" aria-hidden="true" class="v-icon notranslate v-icon--dense im im-circle-down theme--light"></i></span></button><div data-v-1250258c="" class="v-menu"><!----></div> <a data-v-1250258c="" href="#/notifications" class="v-btn v-btn--router v-btn--text theme--light v-size--default primary--text"><span class="v-btn__content">
+                    Оповещения
+                </span></a> <a data-v-1250258c="" href="#/touches" class="v-btn v-btn--router v-btn--text theme--light v-size--default primary--text"><span class="v-btn__content">
+                Касания
+            </span></a> <a data-v-1250258c="" href="#/volunteers" class="v-btn--active v-btn v-btn--router v-btn--text theme--light v-size--default primary--text" aria-current="page"><span class="v-btn__content">
+                    Активисты
+                </span></a> <a data-v-1250258c="" href="#/cells" class="v-btn v-btn--router v-btn--text theme--light v-size--default primary--text"><span class="v-btn__content">
+                    Ячейки
+                </span></a> <a data-v-1250258c="" href="#/imported" class="v-btn v-btn--router v-btn--text theme--light v-size--default primary--text"><span class="v-btn__content">
+                    Неподтвержденные
+                </span></a> <!----> <div data-v-1250258c="" class="v-menu"><!----></div><button data-v-1250258c="" type="button" class="collapse v-btn v-btn--text theme--light v-size--default primary--text"><span class="v-btn__content">
+                        Отчёты<i data-v-1250258c="" aria-hidden="true" class="v-icon notranslate v-icon--dense im im-circle-down theme--light"></i></span></button> <div data-v-1250258c="" class="v-username"><span data-v-1250258c="" class="v-username__content">Сергей Шатилов</span></div> <button data-v-1250258c="" type="button" class="exit v-btn v-btn--text theme--light v-size--default primary--text"><span class="v-btn__content">
+                выход
+            </span></button></div> <form data-v-1250258c="" action="/logout" method="post" class="d-none"></form></div></header> <main data-v-5680dfe2="" class="v-main" data-booted="true" style="padding: 64px 0px 0px;"><div class="v-main__wrap"><div data-v-5680dfe2="" class="container container--fluid px-0"><div data-v-5680dfe2="" class="row"><div data-v-5680dfe2="" px-0="" class="col"><div data-v-c2da4c6e="" data-v-5680dfe2="" class="v-data-table v-data-table--dense v-data-table--fixed-header v-data-table--has-top v-data-table--has-bottom theme--light volunteers"><header data-v-c2da4c6e="" class="v-sheet theme--light elevation-0 v-toolbar v-toolbar--dense v-toolbar--extended" style="height: 136px;"><div class="v-toolbar__content" style="height: 72px;"><div data-v-c2da4c6e="" class="v-toolbar__title">Активисты</div> <div data-v-c2da4c6e="" class="spacer"></div> <span data-v-c2da4c6e="" class="v-tooltip v-tooltip--top"><!----></span><button type="button" class="v-btn v-btn--icon v-btn--plain v-btn--round theme--light v-size--default add"><span class="v-btn__content"><i aria-hidden="true" class="v-icon notranslate v-icon--dense im im-plus theme--light"></i></span></button> <span data-v-c2da4c6e="" class="v-tooltip v-tooltip--top"><!----></span><button type="button" class="v-btn v-btn--icon v-btn--plain v-btn--round theme--light v-size--default edit"><span class="v-btn__content"></span></button> <div data-v-c2da4c6e="" role="dialog" class="v-dialog__container"><!----></div><span data-v-c2da4c6e="" class="v-tooltip v-tooltip--top"><!----></span><button type="button" disabled="disabled" class="v-btn v-btn--disabled v-btn--icon v-btn--plain v-btn--round theme--light v-size--default delete"><span class="v-btn__content"></span></button> <div data-v-18813c9d="" data-v-c2da4c6e="" role="dialog" class="v-dialog__container"><!----></div><span data-v-18813c9d="" class="v-tooltip v-tooltip--top"><!----></span><button data-v-18813c9d="" type="button" disabled="disabled" class="history v-btn v-btn--disabled v-btn--icon v-btn--plain v-btn--round theme--light v-size--default"><span class="v-btn__content"><i data-v-18813c9d="" aria-hidden="true" class="v-icon notranslate v-icon--dense mdi mdi-alarm-multiple theme--light"></i></span></button> <!----> <div data-v-c2da4c6e="" class="v-menu"><!----></div><span data-v-c2da4c6e="" class="v-tooltip v-tooltip--top"><!----></span><button data-v-c2da4c6e="" type="button" class="actions v-btn v-btn--icon v-btn--plain v-btn--round theme--light v-size--default" role="button" aria-haspopup="true" aria-expanded="false"><span class="v-btn__content"><i data-v-c2da4c6e="" aria-hidden="true" class="v-icon notranslate v-icon--dense mdi mdi-menu theme--light"></i></span></button> <div data-v-8bc96a46="" data-v-c2da4c6e="" role="dialog" class="v-dialog__container"></div> <div data-v-c2da4c6e="" role="dialog" class="v-dialog__container"><!----></div> <div data-v-c2da4c6e="" role="dialog" class="v-dialog__container"><!----></div> <div data-v-c2da4c6e="" role="dialog" class="v-dialog__container"><!----></div> <div data-v-c2da4c6e="" role="dialog" class="v-dialog__container"><!----></div> <div data-v-c2da4c6e="" role="dialog" class="v-dialog__container"><!----></div> <div data-v-c2da4c6e="" role="dialog" class="v-dialog__container"><!----></div> <div data-v-c2da4c6e="" role="dialog" class="v-dialog__container"><!----></div> <div data-v-c2da4c6e="" class="spacer"></div> <div data-v-29976b92="" data-v-c2da4c6e="" role="dialog" class="v-dialog__container"><!----></div><button data-v-c2da4c6e="" type="button" class="ml-3 settings v-btn v-btn--text theme--light v-size--default"><span class="v-btn__content">
+                           Настройки
+                    </span></button></div><div class="v-toolbar__extension" style="height: 64px;"><div data-v-c2da4c6e="" class="v-input mt-1 mr-6 v-input--hide-details theme--light v-input--selection-controls v-input--switch"><div class="v-input__control"><div class="v-input__slot"><div class="v-input--selection-controls__input"><input aria-checked="false" id="input-68" role="switch" type="checkbox" aria-disabled="false" value=""><div class="v-input--selection-controls__ripple"></div><div class="v-input--switch__track theme--light"></div><div class="v-input--switch__thumb theme--light"><!----></div></div><label for="input-68" class="v-label theme--light" style="left: 0px; right: auto; position: relative;">До 18 лет</label></div></div></div> <div data-v-c2da4c6e="" class="v-input mt-1 mr-6 v-input--hide-details theme--light v-input--selection-controls v-input--switch"><div class="v-input__control"><div class="v-input__slot"><div class="v-input--selection-controls__input"><input aria-checked="false" id="input-70" role="switch" type="checkbox" aria-disabled="false" value=""><div class="v-input--selection-controls__ripple"></div><div class="v-input--switch__track theme--light"></div><div class="v-input--switch__thumb theme--light"><!----></div></div><label for="input-70" class="v-label theme--light" style="left: 0px; right: auto; position: relative;">Более 100 лет</label></div></div></div> <div data-v-c2da4c6e="" class="v-input mt-1 mr-6 v-input--hide-details theme--light v-input--selection-controls v-input--switch"><div class="v-input__control"><div class="v-input__slot"><div class="v-input--selection-controls__input"><input aria-checked="false" id="input-72" role="switch" type="checkbox" aria-disabled="false" value=""><div class="v-input--selection-controls__ripple"></div><div class="v-input--switch__track theme--light"></div><div class="v-input--switch__thumb theme--light"><!----></div></div><label for="input-72" class="v-label theme--light" style="left: 0px; right: auto; position: relative;">Добавить личные аккаунты</label></div></div></div> <div data-v-c2da4c6e="" class="v-input mt-1 mr-6 v-input--hide-details theme--light v-text-field v-text-field--is-booted v-text-field--enclosed v-text-field--outlined"><div class="v-input__control"><div class="v-input__slot"><fieldset aria-hidden="true"><legend style="width: 0px;"><span>​</span></legend></fieldset><div class="v-text-field__slot"><label for="search-last_name" class="v-label theme--light" style="left: 0px; right: auto; position: absolute;">ФИО/телефон активиста</label><input id="search-last_name" type="text"></div><div class="v-input__append-inner"><div class="v-input__icon v-input__icon--clear"><button disabled="disabled" type="button" aria-label="clear icon" class="v-icon notranslate v-icon--disabled v-icon--link mdi mdi-close theme--light"></button></div></div></div></div></div> <div data-v-c2da4c6e="" class="spacer"></div> <div data-v-0e9a0deb="" data-v-c2da4c6e="" role="dialog" class="v-dialog__container"><!----></div><div data-v-0e9a0deb="" class="v-input v-input--hide-details theme--light v-text-field v-text-field--is-booted v-text-field--placeholder v-select" style="max-width: 300px; margin-left: 30px;"><div class="v-input__control"><div role="button" aria-haspopup="listbox" aria-expanded="false" aria-owns="list-78" class="v-input__slot"><div class="v-select__slot"><label for="input-78" class="v-label theme--light" style="left: 0px; right: auto; position: absolute;">Основная ячейка</label><div class="v-select__selections"><input id="input-78" readonly="readonly" type="text" aria-readonly="false" autocomplete="off"></div><div class="v-input__append-inner"><div class="v-input__icon v-input__icon--clear"><button disabled="disabled" type="button" aria-label="clear icon" class="v-icon notranslate v-icon--disabled v-icon--link mdi mdi-close theme--light"></button></div></div><div class="v-input__append-inner"><div class="v-input__icon v-input__icon--append"><button aria-hidden="true" type="button" tabindex="-1" class="v-icon notranslate v-icon--link mdi mdi-menu-down theme--light"></button></div></div><input type="hidden"></div><div class="v-menu"><!----></div></div></div></div> <div data-v-0e9a0deb="" data-v-c2da4c6e="" role="dialog" class="v-dialog__container"><!----></div><div data-v-0e9a0deb="" class="v-input v-input--hide-details theme--light v-text-field v-text-field--is-booted v-text-field--placeholder v-select v-select--chips v-select--chips--small v-select--is-multi" style="max-width: 300px; margin-left: 30px;"><div class="v-input__control"><div role="button" aria-haspopup="listbox" aria-expanded="false" aria-owns="list-84" class="v-input__slot"><div class="v-select__slot"><label for="input-84" class="v-label theme--light" style="left: 0px; right: auto; position: absolute;">Фильтр по участию в ячейках</label><div class="v-select__selections"><input id="input-84" readonly="readonly" type="text" aria-readonly="false" autocomplete="off"></div><div class="v-input__append-inner"><div class="v-input__icon v-input__icon--clear"><button disabled="disabled" type="button" aria-label="clear icon" class="v-icon notranslate v-icon--disabled v-icon--link mdi mdi-close theme--light"></button></div></div><div class="v-input__append-inner"><div class="v-input__icon v-input__icon--append"><button aria-hidden="true" type="button" tabindex="-1" class="v-icon notranslate v-icon--link mdi mdi-menu-down theme--light"></button></div></div><input type="hidden"></div><div class="v-menu"><!----></div></div></div></div> <div data-v-52556126="" data-v-c2da4c6e="" role="dialog" class="v-dialog__container"><!----></div><span data-v-52556126="" class="v-badge v-badge--overlap theme--light"><button data-v-52556126="" type="button" class="v-btn v-btn--plain theme--light v-size--default"><span class="v-btn__content">Фильтры</span></button><span class="v-badge__wrapper"><span aria-atomic="true" aria-label="знак" aria-live="polite" role="status" class="v-badge__badge primary" style="inset: auto auto calc(100% - 12px) calc(100% - 12px); display: none;"></span></span></span> <button data-v-c2da4c6e="" type="button" disabled="disabled" class="ml-3 filter-clean v-btn v-btn--disabled v-btn--text theme--light v-size--default"><span class="v-btn__content"><i data-v-c2da4c6e="" aria-hidden="true" class="v-icon notranslate v-icon--dense mdi mdi-filter-off theme--light"></i></span></button></div></header><div class="v-data-table__wrapper" style="height: calc(100vh - 328px);"><table><colgroup><col class=""><col class=""><col class=""><col class=""><col class=""><col class=""><col class=""><col class=""><col class=""></colgroup><thead class="v-data-table-header"><tr><th role="columnheader" scope="col" aria-label="" class="text-start" style="width: 1px; min-width: 1px;"><div class="v-data-table__checkbox v-simple-checkbox"><div class="v-input--selection-controls__ripple"></div><i aria-hidden="true" class="v-icon notranslate mdi mdi-checkbox-blank-outline theme--light"></i></div></th><th role="columnheader" scope="col" aria-label="Основная ячейка" class="text-start" style="width: 200px; min-width: 200px;"><span>Основная ячейка</span></th><th role="columnheader" scope="col" aria-label="Ячейки" class="text-start" style="width: 260px; min-width: 260px;"><span>Ячейки</span></th><th role="columnheader" scope="col" aria-label="ФИО: Не упорядочено. Активируйте для упорядочивания по возрастанию." aria-sort="none" class="text-start sortable" style="width: 270px; min-width: 270px;"><span>ФИО</span><i aria-hidden="true" class="v-icon notranslate v-data-table-header__icon mdi mdi-arrow-up theme--light" style="font-size: 18px;"></i></th><th role="columnheader" scope="col" aria-label="Дата рождения: Не упорядочено. Активируйте для упорядочивания по возрастанию." aria-sort="none" class="text-start sortable" style="width: 150px; min-width: 150px;"><span>Дата рождения</span><i aria-hidden="true" class="v-icon notranslate v-data-table-header__icon mdi mdi-arrow-up theme--light" style="font-size: 18px;"></i></th><th role="columnheader" scope="col" aria-label="Моб. телефон: Не упорядочено. Активируйте для упорядочивания по возрастанию." aria-sort="none" class="text-start sortable" style="width: 140px; min-width: 140px;"><span>Моб. телефон</span><i aria-hidden="true" class="v-icon notranslate v-data-table-header__icon mdi mdi-arrow-up theme--light" style="font-size: 18px;"></i></th><th role="columnheader" scope="col" aria-label="Примечание: Не упорядочено. Активируйте для упорядочивания по возрастанию." aria-sort="none" class="text-start sortable" style="width: 300px; min-width: 300px;"><span>Примечание</span><i aria-hidden="true" class="v-icon notranslate v-data-table-header__icon mdi mdi-arrow-up theme--light" style="font-size: 18px;"></i></th><th role="columnheader" scope="col" aria-label="Ответственный: Не упорядочено. Активируйте для упорядочивания по возрастанию." aria-sort="none" class="text-start sortable" style="width: 80px; min-width: 80px;"><span>Ответственный</span><i aria-hidden="true" class="v-icon notranslate v-data-table-header__icon mdi mdi-arrow-up theme--light" style="font-size: 18px;"></i></th><th role="columnheader" scope="col" aria-label="E-mail: Не упорядочено. Активируйте для упорядочивания по возрастанию." aria-sort="none" class="text-start sortable" style="width: 200px; min-width: 200px;"><span>E-mail</span><i aria-hidden="true" class="v-icon notranslate v-data-table-header__icon mdi mdi-arrow-up theme--light" style="font-size: 18px;"></i></th></tr></thead><tbody><tr class=""><td class="text-start"><div class="v-data-table__checkbox v-simple-checkbox"><div class="v-input--selection-controls__ripple"></div><i aria-hidden="true" class="v-icon notranslate mdi mdi-checkbox-blank-outline theme--light"></i></div></td><td class="text-start">
+        
+    </td><td class="text-start">
+        
+    </td><td class="text-start"><div data-v-c2da4c6e="" title="Федеральный МГЕР" class="fed-mger"></div> <span data-v-c2da4c6e="">55544333&nbsp;sdfsdsd1&nbsp;sdfdsfdsf</span></td><td class="text-start">
+        10.05.2018
+    </td><td class="text-start">(654) 987-65-45</td><td class="text-start"></td><td class="text-start">
+        Нет
+    </td><td class="text-start"></td></tr><tr class=""><td class="text-start"><div class="v-data-table__checkbox v-simple-checkbox"><div class="v-input--selection-controls__ripple"></div><i aria-hidden="true" class="v-icon notranslate mdi mdi-checkbox-blank-outline theme--light"></i></div></td><td class="text-start">
+        
+    </td><td class="text-start">
+        
+    </td><td class="text-start"><!----> <span data-v-c2da4c6e="">dddeee&nbsp;sdfsdf&nbsp;sdfsdf</span></td><td class="text-start">
+        17.08.2017
+    </td><td class="text-start">(984) 562-54-52</td><td class="text-start">sdfsdsdf</td><td class="text-start">
+        Нет
+    </td><td class="text-start"></td></tr><tr class=""><td class="text-start"><div class="v-data-table__checkbox v-simple-checkbox"><div class="v-input--selection-controls__ripple"></div><i aria-hidden="true" class="v-icon notranslate mdi mdi-checkbox-blank-outline theme--light"></i></div></td><td class="text-start">
+        
+    </td><td class="text-start">
+        
+    </td><td class="text-start"><!----> <span data-v-c2da4c6e="">eee&nbsp;rrr&nbsp;rrr</span></td><td class="text-start">
+        07.05.2020
+    </td><td class="text-start">(926) 210-65-49</td><td class="text-start">смисмисми</td><td class="text-start">
+        Нет
+    </td><td class="text-start">bitware@yandex.ru</td></tr><tr class=""><td class="text-start"><div class="v-data-table__checkbox v-simple-checkbox"><div class="v-input--selection-controls__ripple"></div><i aria-hidden="true" class="v-icon notranslate mdi mdi-checkbox-blank-outline theme--light"></i></div></td><td class="text-start">
+        
+    </td><td class="text-start">
+        
+    </td><td class="text-start"><!----> <span data-v-c2da4c6e="">qwewe&nbsp;234234&nbsp;23423423</span></td><td class="text-start">
+        14.02.2019
+    </td><td class="text-start">(987) 456-87-87</td><td class="text-start"></td><td class="text-start">
+        Нет
+    </td><td class="text-start"></td></tr><tr class=""><td class="text-start"><div class="v-data-table__checkbox v-simple-checkbox"><div class="v-input--selection-controls__ripple"></div><i aria-hidden="true" class="v-icon notranslate mdi mdi-checkbox-blank-outline theme--light"></i></div></td><td class="text-start">
+        
+    </td><td class="text-start">
+        
+    </td><td class="text-start"><!----> <span data-v-c2da4c6e="">sdfsdfdsf&nbsp;sdfsdfdsf&nbsp;sdfsdf</span></td><td class="text-start">
+        11.05.1995
+    </td><td class="text-start">(654) 251-25-45</td><td class="text-start"></td><td class="text-start">
+        Нет
+    </td><td class="text-start"></td></tr><tr class=""><td class="text-start"><div class="v-data-table__checkbox v-simple-checkbox"><div class="v-input--selection-controls__ripple"></div><i aria-hidden="true" class="v-icon notranslate mdi mdi-checkbox-blank-outline theme--light"></i></div></td><td class="text-start">
+        Заявки мобилизации
+    </td><td class="text-start">
+        
+    </td><td class="text-start"><!----> <span data-v-c2da4c6e="">sdfsdfsdf&nbsp;sdfsdf&nbsp;sfsdf</span></td><td class="text-start">
+        20.08.2020
+    </td><td class="text-start">(998) 454-54-51</td><td class="text-start"></td><td class="text-start">
+        Нет
+    </td><td class="text-start"></td></tr><tr class=""><td class="text-start"><div class="v-data-table__checkbox v-simple-checkbox"><div class="v-input--selection-controls__ripple"></div><i aria-hidden="true" class="v-icon notranslate mdi mdi-checkbox-blank-outline theme--light"></i></div></td><td class="text-start">
+        Заявки мобилизации
+    </td><td class="text-start">
+        
+    </td><td class="text-start"><!----> <span data-v-c2da4c6e="">sdfsdfsdf&nbsp;xcvxcvxcv&nbsp;sdfsdfsdf</span></td><td class="text-start">
+        14.02.2019
+    </td><td class="text-start">(888) 745-12-32</td><td class="text-start"></td><td class="text-start">
+        Нет
+    </td><td class="text-start"></td></tr><tr class=""><td class="text-start"><div class="v-data-table__checkbox v-simple-checkbox"><div class="v-input--selection-controls__ripple"></div><i aria-hidden="true" class="v-icon notranslate mdi mdi-checkbox-blank-outline theme--light"></i></div></td><td class="text-start">
+        
+    </td><td class="text-start">
+        
+    </td><td class="text-start"><!----> <span data-v-c2da4c6e="">swww3&nbsp;asdasd&nbsp;adsasd</span></td><td class="text-start">
+        08.08.2019
+    </td><td class="text-start">(984) 562-54-85</td><td class="text-start"></td><td class="text-start">
+        Нет
+    </td><td class="text-start"></td></tr><tr class=""><td class="text-start"><div class="v-data-table__checkbox v-simple-checkbox"><div class="v-input--selection-controls__ripple"></div><i aria-hidden="true" class="v-icon notranslate mdi mdi-checkbox-blank-outline theme--light"></i></div></td><td class="text-start">
+        Долголетие для всех (Истра)
+    </td><td class="text-start">
+        
+    </td><td class="text-start"><div data-v-c2da4c6e="" title="Федеральный МГЕР" class="fed-mger"></div> <strong data-v-c2da4c6e="">TEST&nbsp;MGER&nbsp;ADD</strong></td><td class="text-start">
+        10.01.1990
+    </td><td class="text-start">(111) 222-33-44</td><td class="text-start"></td><td class="text-start">
+        Да
+    </td><td class="text-start"></td></tr><tr class=""><td class="text-start"><div class="v-data-table__checkbox v-simple-checkbox"><div class="v-input--selection-controls__ripple"></div><i aria-hidden="true" class="v-icon notranslate mdi mdi-checkbox-blank-outline theme--light"></i></div></td><td class="text-start">
+        
+    </td><td class="text-start">
+        
+    </td><td class="text-start"><!----> <span data-v-c2da4c6e="">ttt&nbsp;ssdfsdf&nbsp;sdfsdf</span></td><td class="text-start">
+        18.08.2016
+    </td><td class="text-start">(548) 754-21-54</td><td class="text-start"></td><td class="text-start">
+        Нет
+    </td><td class="text-start"></td></tr><tr class=""><td class="text-start"><div class="v-data-table__checkbox v-simple-checkbox"><div class="v-input--selection-controls__ripple"></div><i aria-hidden="true" class="v-icon notranslate mdi mdi-checkbox-blank-outline theme--light"></i></div></td><td class="text-start">
+        Жители МКД (Истра)
+    </td><td class="text-start">
+        
+    </td><td class="text-start"><!----> <strong data-v-c2da4c6e="">ааа&nbsp;ввв&nbsp;ууу</strong></td><td class="text-start">
+        05.02.2020
+    </td><td class="text-start">(456) 789-12-45</td><td class="text-start"></td><td class="text-start">
+        Да
+    </td><td class="text-start"></td></tr><tr class=""><td class="text-start"><div class="v-data-table__checkbox v-simple-checkbox"><div class="v-input--selection-controls__ripple"></div><i aria-hidden="true" class="v-icon notranslate mdi mdi-checkbox-blank-outline theme--light"></i></div></td><td class="text-start">
+        
+    </td><td class="text-start">
+        
+    </td><td class="text-start"><!----> <span data-v-c2da4c6e="">Ааа&nbsp;Вааыа&nbsp;Аппп</span></td><td class="text-start">
+        01.09.2002
+    </td><td class="text-start">(654) 251-45-25</td><td class="text-start"></td><td class="text-start">
+        Нет
+    </td><td class="text-start"></td></tr><tr class=""><td class="text-start"><div class="v-data-table__checkbox v-simple-checkbox"><div class="v-input--selection-controls__ripple"></div><i aria-hidden="true" class="v-icon notranslate mdi mdi-checkbox-blank-outline theme--light"></i></div></td><td class="text-start">
+        
+    </td><td class="text-start">
+        
+    </td><td class="text-start"><!----> <strong data-v-c2da4c6e="">Аааа&nbsp;Ответственный&nbsp;Региональный</strong></td><td class="text-start">
+        15.02.1996
+    </td><td class="text-start">(999) 321-78-54</td><td class="text-start"></td><td class="text-start">
+        Да
+    </td><td class="text-start"></td></tr><tr class=""><td class="text-start"><div class="v-data-table__checkbox v-simple-checkbox"><div class="v-input--selection-controls__ripple"></div><i aria-hidden="true" class="v-icon notranslate mdi mdi-checkbox-blank-outline theme--light"></i></div></td><td class="text-start">
+        Долголетие для всех (Богородский)
+    </td><td class="text-start">
+        
+    </td><td class="text-start"><!----> <strong data-v-c2da4c6e="">АААА&nbsp;Ответственный&nbsp;Обычный</strong></td><td class="text-start">
+        17.02.1983
+    </td><td class="text-start">(999) 856-54-58</td><td class="text-start"></td><td class="text-start">
+        Да
+    </td><td class="text-start"></td></tr><tr class=""><td class="text-start"><div class="v-data-table__checkbox v-simple-checkbox"><div class="v-input--selection-controls__ripple"></div><i aria-hidden="true" class="v-icon notranslate mdi mdi-checkbox-blank-outline theme--light"></i></div></td><td class="text-start">
+        
+    </td><td class="text-start">
+        
+    </td><td class="text-start"><!----> <span data-v-c2da4c6e="">Абакумов&nbsp;1Александр&nbsp;Александрович</span></td><td class="text-start">
+        03.08.1980
+    </td><td class="text-start">(269) 540-61-38</td><td class="text-start">zxczxczxczxc</td><td class="text-start">
+        Нет
+    </td><td class="text-start"></td></tr><tr class=""><td class="text-start"><div class="v-data-table__checkbox v-simple-checkbox"><div class="v-input--selection-controls__ripple"></div><i aria-hidden="true" class="v-icon notranslate mdi mdi-checkbox-blank-outline theme--light"></i></div></td><td class="text-start">
+        МГЕР
+    </td><td class="text-start">
+        Заявки мобилизации, Конкурс МО, РОП
+    </td><td class="text-start"><!----> <span data-v-c2da4c6e="">Абакумов&nbsp;Александр&nbsp;Александрович</span></td><td class="text-start">
+        11.07.1956
+    </td><td class="text-start">(720) 268-06-58</td><td class="text-start"></td><td class="text-start">
+        Нет
+    </td><td class="text-start"></td></tr><tr class=""><td class="text-start"><div class="v-data-table__checkbox v-simple-checkbox"><div class="v-input--selection-controls__ripple"></div><i aria-hidden="true" class="v-icon notranslate mdi mdi-checkbox-blank-outline theme--light"></i></div></td><td class="text-start">
+        МГЕР
+    </td><td class="text-start">
+        Депутаты, Конкурс МО, РОП
+    </td><td class="text-start"><!----> <span data-v-c2da4c6e="">Абакумов&nbsp;Александр&nbsp;Александрович</span></td><td class="text-start">
+        05.08.1959
+    </td><td class="text-start">(815) 311-24-37</td><td class="text-start"></td><td class="text-start">
+        Нет
+    </td><td class="text-start"></td></tr><tr class=""><td class="text-start"><div class="v-data-table__checkbox v-simple-checkbox"><div class="v-input--selection-controls__ripple"></div><i aria-hidden="true" class="v-icon notranslate mdi mdi-checkbox-blank-outline theme--light"></i></div></td><td class="text-start">
+        
+    </td><td class="text-start">
+        
+    </td><td class="text-start"><!----> <span data-v-c2da4c6e="">Абакумов&nbsp;Александр&nbsp;Александрович</span></td><td class="text-start">
+        16.06.1963
+    </td><td class="text-start">(712) 824-26-60</td><td class="text-start">пропроxcvxcvxcvсмисмисми</td><td class="text-start">
+        Нет
+    </td><td class="text-start"></td></tr><tr class=""><td class="text-start"><div class="v-data-table__checkbox v-simple-checkbox"><div class="v-input--selection-controls__ripple"></div><i aria-hidden="true" class="v-icon notranslate mdi mdi-checkbox-blank-outline theme--light"></i></div></td><td class="text-start">
+        Партийный десант (Реутов)
+    </td><td class="text-start">
+        
+    </td><td class="text-start"><!----> <span data-v-c2da4c6e="">Абакумов&nbsp;Александр&nbsp;Александрович</span></td><td class="text-start">
+        08.05.1967
+    </td><td class="text-start">(954) 452-57-71</td><td class="text-start"></td><td class="text-start">
+        Нет
+    </td><td class="text-start"></td></tr><tr class=""><td class="text-start"><div class="v-data-table__checkbox v-simple-checkbox"><div class="v-input--selection-controls__ripple"></div><i aria-hidden="true" class="v-icon notranslate mdi mdi-checkbox-blank-outline theme--light"></i></div></td><td class="text-start">
+        
+    </td><td class="text-start">
+        
+    </td><td class="text-start"><!----> <span data-v-c2da4c6e="">Абакумов&nbsp;Александр&nbsp;Александрович</span></td><td class="text-start">
+        14.03.1971
+    </td><td class="text-start">(641) 265-35-05</td><td class="text-start"></td><td class="text-start">
+        Нет
+    </td><td class="text-start"></td></tr><tr class=""><td class="text-start"><div class="v-data-table__checkbox v-simple-checkbox"><div class="v-input--selection-controls__ripple"></div><i aria-hidden="true" class="v-icon notranslate mdi mdi-checkbox-blank-outline theme--light"></i></div></td><td class="text-start">
+        
+    </td><td class="text-start">
+        
+    </td><td class="text-start"><!----> <span data-v-c2da4c6e="">Абакумов&nbsp;Александр&nbsp;Александрович</span></td><td class="text-start">
+        25.08.1975
+    </td><td class="text-start">(859) 595-71-50</td><td class="text-start"></td><td class="text-start">
+        Нет
+    </td><td class="text-start"></td></tr><tr class=""><td class="text-start"><div class="v-data-table__checkbox v-simple-checkbox"><div class="v-input--selection-controls__ripple"></div><i aria-hidden="true" class="v-icon notranslate mdi mdi-checkbox-blank-outline theme--light"></i></div></td><td class="text-start">
+        
+    </td><td class="text-start">
+        Партийный десант (Долгопрудный)
+    </td><td class="text-start"><!----> <span data-v-c2da4c6e="">Абакумов&nbsp;Александр&nbsp;Александрович</span></td><td class="text-start">
+        30.06.1979
+    </td><td class="text-start">(529) 962-87-62</td><td class="text-start"></td><td class="text-start">
+        Нет
+    </td><td class="text-start"></td></tr><tr class=""><td class="text-start"><div class="v-data-table__checkbox v-simple-checkbox"><div class="v-input--selection-controls__ripple"></div><i aria-hidden="true" class="v-icon notranslate mdi mdi-checkbox-blank-outline theme--light"></i></div></td><td class="text-start">
+        Пахомов Сергей Александрович (Королев)
+    </td><td class="text-start">
+        
+    </td><td class="text-start"><!----> <span data-v-c2da4c6e="">Абакумов&nbsp;Александр&nbsp;Александрович</span></td><td class="text-start">
+        02.10.1987
+    </td><td class="text-start">(742) 849-76-86</td><td class="text-start"></td><td class="text-start">
+        Нет
+    </td><td class="text-start"></td></tr><tr class=""><td class="text-start"><div class="v-data-table__checkbox v-simple-checkbox"><div class="v-input--selection-controls__ripple"></div><i aria-hidden="true" class="v-icon notranslate mdi mdi-checkbox-blank-outline theme--light"></i></div></td><td class="text-start">
+        Колунов Сергей Владимирович (Лотошино)
+    </td><td class="text-start">
+        Партийный десант (Балашиха), Партийный десант (Бронницы)
+    </td><td class="text-start"><!----> <span data-v-c2da4c6e="">Абакумов&nbsp;Александр&nbsp;Александрович</span></td><td class="text-start">
+        04.07.1988
+    </td><td class="text-start">(577) 055-92-62</td><td class="text-start"></td><td class="text-start">
+        Нет
+    </td><td class="text-start"></td></tr><tr class=""><td class="text-start"><div class="v-data-table__checkbox v-simple-checkbox"><div class="v-input--selection-controls__ripple"></div><i aria-hidden="true" class="v-icon notranslate mdi mdi-checkbox-blank-outline theme--light"></i></div></td><td class="text-start">
+        
+    </td><td class="text-start">
+        
+    </td><td class="text-start"><!----> <span data-v-c2da4c6e="">Абакумов&nbsp;Александр&nbsp;Александрович</span></td><td class="text-start">
+        18.03.1991
+    </td><td class="text-start">(760) 310-65-78</td><td class="text-start"></td><td class="text-start">
+        Нет
+    </td><td class="text-start"></td></tr></tbody></table></div><div class="v-data-footer"><div class="v-data-footer__select">Строк на странице:<div class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-text-field--is-booted v-select"><div class="v-input__control"><div role="button" aria-haspopup="listbox" aria-expanded="false" aria-owns="list-105" class="v-input__slot"><div class="v-select__slot"><div class="v-select__selections"><div class="v-select__selection v-select__selection--comma">25</div><input aria-label="Строк на странице:" id="input-105" readonly="readonly" type="text" aria-readonly="false" autocomplete="off"></div><div class="v-input__append-inner"><div class="v-input__icon v-input__icon--append"><i aria-hidden="true" class="v-icon notranslate mdi mdi-menu-down theme--light"></i></div></div><input type="hidden" value="25"></div><div class="v-menu"><!----></div></div></div></div></div><div class="v-data-footer__pagination">
+      Показаны строки с 1 по 25 из 999946.
+      Перейти к странице:
+      <div data-v-c2da4c6e="" class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty v-input--dense theme--light v-text-field v-text-field--is-booted v-text-field--enclosed v-text-field--outlined v-select v-autocomplete" style="width: 110px;"><div class="v-input__control"><div role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-owns="list-108" class="v-input__slot"><fieldset aria-hidden="true"><legend style="width: 0px;"><span>​</span></legend></fieldset><div class="v-select__slot"><input id="input-108" type="text" autocomplete="off"><div class="v-input__append-inner"><div class="v-input__icon v-input__icon--append"><i aria-hidden="true" class="v-icon notranslate mdi mdi-menu-down theme--light"></i></div></div><input type="hidden" value="1"></div><div class="v-menu"><!----></div></div></div></div></div><div class="v-data-footer__icons-before"><button type="button" disabled="disabled" class="v-btn v-btn--disabled v-btn--icon v-btn--round v-btn--text theme--light v-size--default" aria-label="Первая страница"><span class="v-btn__content"><i aria-hidden="true" class="v-icon notranslate mdi mdi-page-first theme--light"></i></span></button><button type="button" disabled="disabled" class="v-btn v-btn--disabled v-btn--icon v-btn--round v-btn--text theme--light v-size--default" aria-label="Предыдущая страница"><span class="v-btn__content"><i aria-hidden="true" class="v-icon notranslate mdi mdi-chevron-left theme--light"></i></span></button></div><span>1</span><div class="v-data-footer__icons-after"><button type="button" class="v-btn v-btn--icon v-btn--round v-btn--text theme--light v-size--default" aria-label="Следующая страница"><span class="v-btn__content"><i aria-hidden="true" class="v-icon notranslate mdi mdi-chevron-right theme--light"></i></span></button><button type="button" class="v-btn v-btn--icon v-btn--round v-btn--text theme--light v-size--default" aria-label="Последняя страница"><span class="v-btn__content"><i aria-hidden="true" class="v-icon notranslate mdi mdi-page-last theme--light"></i></span></button></div></div></div></div></div></div></div></main></div><div role="document" tabindex="0" data-v-8bc96a46="" class="v-dialog__content v-dialog__content--active" style="z-index: 202;"><div class="v-dialog volunteer-edit v-dialog--active v-dialog--persistent" style="transform-origin: center center; max-width: 880px;"><div data-v-8bc96a46="" class="v-card v-sheet theme--light"><div data-v-8bc96a46="" class="v-card__title font-weight-bold pb-0">
+            ПРАВКА
+            <div data-v-8bc96a46="" class="spacer"></div> <button data-v-8bc96a46="" type="button" class="v-btn v-btn--icon v-btn--round theme--light v-size--default"><span class="v-btn__content"><i data-v-8bc96a46="" aria-hidden="true" class="v-icon notranslate v-icon--dense mdi mdi-close theme--light"></i></span></button></div> <div data-v-8bc96a46="" class="container py-0 container--fluid"><div data-v-8bc96a46="" class="v-tabs pb-2 v-tabs--grow theme--light"><div role="tablist" class="v-item-group theme--light v-slide-group v-tabs-bar primary--text" data-booted="true"><div class="v-slide-group__prev v-slide-group__prev--disabled"><!----></div><div class="v-slide-group__wrapper"><div class="v-slide-group__content v-tabs-bar__content"><div class="v-tabs-slider-wrapper" style="height: 2px; left: 0px; width: 152px;"><div class="v-tabs-slider"></div></div><div data-v-8bc96a46="" tabindex="0" aria-selected="true" role="tab" class="v-tab v-tab--active">Основное</div> <div data-v-8bc96a46="" tabindex="0" aria-selected="false" role="tab" class="v-tab">Контакт</div> <div data-v-8bc96a46="" tabindex="0" aria-selected="false" role="tab" class="v-tab">Дополнительно</div> <div data-v-8bc96a46="" tabindex="0" aria-selected="false" role="tab" class="v-tab">Адрес</div> <div data-v-8bc96a46="" tabindex="0" aria-selected="false" role="tab" class="v-tab">МГЕР</div> <!----> <div data-v-8bc96a46="" tabindex="0" aria-selected="false" role="tab" class="v-tab">
+                    Пароль
+                </div> <!----></div></div><div class="v-slide-group__next v-slide-group__next--disabled"><!----></div></div></div> <form data-v-8bc96a46="" novalidate="novalidate" class="v-form"><div data-v-8bc96a46="" class="v-window v-item-group theme--light v-tabs-items"><div class="v-window__container" style=""><div data-v-8bc96a46="" class="v-window-item v-window-item--active"><div data-v-8bc96a46="" class="container px-0"><!----> <div data-v-8bc96a46="" class="row no-gutters"><div data-v-8bc96a46="" class="pr-4 col col-6"><div data-v-8bc96a46="" class="v-input mb-5 v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-text-field--is-booted v-text-field--enclosed v-text-field--outlined"><div class="v-input__control"><div class="v-input__slot"><fieldset aria-hidden="true"><legend style="width: 53.25px;"><span>​</span></legend></fieldset><div class="v-text-field__slot"><label for="edit-last_name" class="v-label v-label--active theme--light" style="left: 0px; right: auto; position: absolute;">Фамилия</label><input id="edit-last_name" type="text"></div></div></div></div> <div data-v-8bc96a46="" class="v-input mb-5 v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-text-field--is-booted v-text-field--enclosed v-text-field--outlined"><div class="v-input__control"><div class="v-input__slot"><fieldset aria-hidden="true"><legend style="width: 27.75px;"><span>​</span></legend></fieldset><div class="v-text-field__slot"><label for="edit-first_name" class="v-label v-label--active theme--light" style="left: 0px; right: auto; position: absolute;">Имя</label><input id="edit-first_name" type="text"></div></div></div></div> <div data-v-8bc96a46="" class="v-input mb-5 v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-text-field--is-booted v-text-field--enclosed v-text-field--outlined"><div class="v-input__control"><div class="v-input__slot"><fieldset aria-hidden="true"><legend style="width: 54px;"><span>​</span></legend></fieldset><div class="v-text-field__slot"><label for="edit-patronymic" class="v-label v-label--active theme--light" style="left: 0px; right: auto; position: absolute;">Отчество</label><input id="edit-patronymic" type="text"></div></div></div></div> <div data-v-1bb0960c="" data-v-8bc96a46="" class="v-menu"><!----></div><div data-v-1bb0960c="" class="v-input v-input--is-label-active v-input--is-dirty theme--light v-text-field v-text-field--is-booted v-text-field--enclosed v-text-field--outlined mb-5"><div class="v-input__control"><div class="v-input__slot"><fieldset aria-hidden="true"><legend style="width: 84px;"><span>​</span></legend></fieldset><div class="v-text-field__slot"><label for="input-159" class="v-label v-label--active theme--light" style="left: 0px; right: auto; position: absolute;">Дата рождения</label><input maxlength="10" autocomplete="off" id="input-159" type="text"></div><div class="v-input__append-inner"><div class="v-input__icon v-input__icon--clear"><button type="button" aria-label="clear icon" class="v-icon notranslate v-icon--link mdi mdi-close theme--light"></button></div></div><div class="v-input__append-inner"><div class="v-input__icon v-input__icon--append"><i aria-hidden="true" class="v-icon notranslate mdi mdi-calendar theme--light"></i></div></div></div><div class="v-text-field__details"><div class="v-messages theme--light"><div class="v-messages__wrapper"></div></div></div></div></div> <div data-v-8bc96a46="" class="v-input mb-5 v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-text-field--is-booted v-text-field--enclosed v-text-field--outlined"><div class="v-input__control"><div class="v-input__slot"><fieldset aria-hidden="true"><legend style="width: 76.5px;"><span>​</span></legend></fieldset><div class="v-text-field__slot"><label for="edit-phone_mobile" class="v-label v-label--active theme--light" style="left: 0px; right: auto; position: absolute;">Моб. телефон</label><input id="edit-phone_mobile" type="text"></div></div></div></div> <div data-v-8bc96a46="" class="v-input mb-5 v-textarea v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-text-field--is-booted v-text-field--enclosed v-text-field--outlined"><div class="v-input__control"><div class="v-input__slot"><fieldset aria-hidden="true"><legend style="width: 36px;"><span>​</span></legend></fieldset><div class="v-text-field__slot"><label for="edit-address" class="v-label v-label--active theme--light" style="left: 0px; right: auto; position: absolute;">Адрес</label><textarea id="edit-address" rows="2"></textarea></div></div></div></div> <!----> <div data-v-8bc96a46="" class="v-input mb-5 v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-text-field--is-booted v-text-field--enclosed v-text-field--outlined v-select"><div class="v-input__control"><div role="button" aria-haspopup="listbox" aria-expanded="false" aria-owns="list-166" class="v-input__slot"><fieldset aria-hidden="true"><legend style="width: 107.25px;"><span>​</span></legend></fieldset><div class="v-select__slot"><label for="edit-branch_id" class="v-label v-label--active theme--light" style="left: 0px; right: auto; position: absolute;">Местное отделение</label><div class="v-select__selections"><div class="v-select__selection v-select__selection--comma">МО Богородского городского округа</div><input id="edit-branch_id" readonly="readonly" type="text" aria-readonly="false" autocomplete="off"></div><div class="v-input__append-inner"><div class="v-input__icon v-input__icon--append"><i aria-hidden="true" class="v-icon notranslate mdi mdi-menu-down theme--light"></i></div></div><input type="hidden" value="1426"></div><div class="v-menu"></div></div></div></div> <div data-v-8bc96a46="" class="v-input mb-5 v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-text-field--is-booted v-text-field--enclosed v-text-field--outlined v-select v-autocomplete"><div class="v-input__control"><div role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-owns="list-169" class="v-input__slot"><fieldset aria-hidden="true"><legend style="width: 40.5px;"><span>​</span></legend></fieldset><div class="v-select__slot"><label for="edit-uik_id" class="v-label v-label--active theme--light" style="left: 0px; right: auto; position: absolute;">УИК №</label><input id="edit-uik_id" type="text" autocomplete="off"><div class="v-input__append-inner"><div class="v-input__icon v-input__icon--append"><i aria-hidden="true" class="v-icon notranslate mdi mdi-menu-down theme--light"></i></div></div><input type="hidden" value="87212"></div><div class="v-menu"></div></div></div></div> <div data-v-8bc96a46="" class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-input--selection-controls v-input--checkbox primary--text"><div class="v-input__control"><div class="v-input__slot"><div class="v-input--selection-controls__input"><i aria-hidden="true" class="v-icon notranslate mdi mdi-checkbox-marked theme--light primary--text"></i><input aria-checked="true" id="input-172" role="checkbox" type="checkbox" value=""><div class="v-input--selection-controls__ripple primary--text"></div></div><label for="input-172" class="v-label theme--light" style="left: 0px; right: auto; position: relative;">ВВЕРХ</label></div></div></div></div> <div data-v-8bc96a46="" class="pl-4 col col-6"><div data-v-8bc96a46="" class="row mb-5 no-gutters align-center"><div data-v-8bc96a46="" class="col"><div data-v-8bc96a46="" class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-input--selection-controls v-input--checkbox primary--text"><div class="v-input__control"><div class="v-input__slot"><div class="v-input--selection-controls__input"><i aria-hidden="true" class="v-icon notranslate mdi mdi-checkbox-marked theme--light primary--text"></i><input aria-checked="true" id="input-174" role="checkbox" type="checkbox" value=""><div class="v-input--selection-controls__ripple primary--text"></div></div><label for="input-174" class="v-label theme--light" style="left: 0px; right: auto; position: relative;">Ответственный</label></div></div></div></div> <div data-v-8bc96a46="" class="col"><div data-v-8bc96a46="" class="v-input v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-input--selection-controls v-input--checkbox primary--text"><div class="v-input__control"><div class="v-input__slot"><div class="v-input--selection-controls__input"><i aria-hidden="true" class="v-icon notranslate mdi mdi-checkbox-marked theme--light primary--text"></i><input aria-checked="true" id="input-176" role="checkbox" type="checkbox" value=""><div class="v-input--selection-controls__ripple primary--text"></div></div><label for="input-176" class="v-label theme--light" style="left: 0px; right: auto; position: relative;">Региональный ответственный</label></div></div></div></div></div> <div data-v-a6545952="" data-v-8bc96a46="" class="v-input mb-5 v-input--hide-details v-input--is-disabled theme--light v-text-field v-text-field--is-booted v-select v-autocomplete" id="edit-foreman_id" rules="function(v) {
+                                              return (
+                                                _vm.edit.form.is_foreman ||
+                                                !!v ||
+                                                &quot;укажите ответственного&quot;
+                                              )
+                                            }" validate-on-blur="" clearable=""><div class="v-input__control"><div role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-owns="list-179" class="v-input__slot"><div class="v-select__slot"><label for="edit-foreman_id" class="v-label v-label--is-disabled theme--light" style="left: 0px; right: auto; position: absolute;">ФИО ответственного</label><input autocomplete="off" disabled="disabled" id="edit-foreman_id" type="text"><div class="v-input__append-inner"><div class="v-input__icon v-input__icon--clear"><button disabled="disabled" type="button" aria-label="clear icon" class="v-icon notranslate v-icon--disabled v-icon--link mdi mdi-close theme--light"></button></div></div><div class="v-input__append-inner"><div class="v-input__icon v-input__icon--append"><i aria-hidden="true" class="v-icon notranslate v-icon--disabled mdi mdi-menu-down theme--light"></i></div></div><input type="hidden"></div><div class="v-menu"><!----></div></div></div></div> <div data-v-0e9a0deb="" data-v-8bc96a46="" role="dialog" class="v-dialog__container"></div><div data-v-0e9a0deb="" class="v-input v-input--hide-details theme--light v-text-field v-text-field--is-booted v-text-field--placeholder v-select mb-5" style="margin-top: -4px;"><div class="v-input__control"><div role="button" aria-haspopup="listbox" aria-expanded="false" aria-owns="list-185" class="v-input__slot"><div class="v-select__slot"><label for="input-185" class="v-label theme--light" style="left: 0px; right: auto; position: absolute;">Основная ячейка</label><div class="v-select__selections"><input id="input-185" readonly="readonly" type="text" aria-readonly="false" autocomplete="off"></div><div class="v-input__append-inner"><div class="v-input__icon v-input__icon--clear"><button disabled="disabled" type="button" aria-label="clear icon" class="v-icon notranslate v-icon--disabled v-icon--link mdi mdi-close theme--light"></button></div></div><div class="v-input__append-inner"><div class="v-input__icon v-input__icon--append"><button aria-hidden="true" type="button" tabindex="-1" class="v-icon notranslate v-icon--link mdi mdi-menu-down theme--light"></button></div></div><input type="hidden"></div><div class="v-menu"><!----></div></div></div></div> <div data-v-0e9a0deb="" data-v-8bc96a46="" role="dialog" class="v-dialog__container"><!----></div><div data-v-0e9a0deb="" class="v-input v-input--hide-details theme--light v-text-field v-text-field--is-booted v-text-field--placeholder v-select v-select--chips v-select--chips--small v-select--is-multi mb-5" style="margin-top: -4px;"><div class="v-input__control"><div role="button" aria-haspopup="listbox" aria-expanded="false" aria-owns="list-191" class="v-input__slot"><div class="v-select__slot"><label for="input-191" class="v-label theme--light" style="left: 0px; right: auto; position: absolute;">Ячейки с участием активиста</label><div class="v-select__selections"><input id="input-191" readonly="readonly" type="text" aria-readonly="false" autocomplete="off"></div><div class="v-input__append-inner"><div class="v-input__icon v-input__icon--clear"><button disabled="disabled" type="button" aria-label="clear icon" class="v-icon notranslate v-icon--disabled v-icon--link mdi mdi-close theme--light"></button></div></div><div class="v-input__append-inner"><div class="v-input__icon v-input__icon--append"><button aria-hidden="true" type="button" tabindex="-1" class="v-icon notranslate v-icon--link mdi mdi-menu-down theme--light"></button></div></div><input type="hidden"></div><div class="v-menu"><!----></div></div></div></div> <div data-v-8bc96a46="" class="v-input mb-5 v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-text-field--is-booted v-text-field--enclosed v-text-field--outlined v-select"><div class="v-input__control"><div role="button" aria-haspopup="listbox" aria-expanded="false" aria-owns="list-195" class="v-input__slot"><fieldset aria-hidden="true"><legend style="width: 67.5px;"><span>​</span></legend></fieldset><div class="v-select__slot"><label for="edit-membership" class="v-label v-label--active theme--light" style="left: 0px; right: auto; position: absolute;">Парт. статус</label><div class="v-select__selections"><div class="v-select__selection v-select__selection--comma">беспартийный</div><input id="edit-membership" readonly="readonly" type="text" aria-readonly="false" autocomplete="off"></div><div class="v-input__append-inner"><div class="v-input__icon v-input__icon--append"><i aria-hidden="true" class="v-icon notranslate mdi mdi-menu-down theme--light"></i></div></div><input type="hidden" value="-"></div><div class="v-menu"><!----></div></div></div></div> <div data-v-8bc96a46="" class="v-input mb-5 v-input--hide-details theme--light v-text-field v-text-field--is-booted v-text-field--enclosed v-text-field--outlined v-select v-select--is-multi"><div class="v-input__control"><div role="button" aria-haspopup="listbox" aria-expanded="false" aria-owns="list-198" class="v-input__slot"><fieldset aria-hidden="true"><legend style="width: 0px;"><span>​</span></legend></fieldset><div class="v-select__slot"><label for="edit-status" class="v-label theme--light" style="left: 0px; right: auto; position: absolute;">Орг. статус</label><div class="v-select__selections"><input id="edit-status" readonly="readonly" type="text" aria-readonly="false" autocomplete="off"></div><div class="v-input__append-inner"><div class="v-input__icon v-input__icon--append"><i aria-hidden="true" class="v-icon notranslate mdi mdi-menu-down theme--light"></i></div></div><input type="hidden"></div><div class="v-menu"><!----></div></div></div></div> <div data-v-8bc96a46="" class="v-input mb-5 v-input--hide-details theme--light v-text-field v-text-field--is-booted v-text-field--enclosed v-text-field--outlined"><div class="v-input__control"><div class="v-input__slot"><fieldset aria-hidden="true"><legend style="width: 0px;"><span>​</span></legend></fieldset><div class="v-text-field__slot"><label for="edit-workplace" class="v-label theme--light" style="left: 0px; right: auto; position: absolute;">Место работы</label><input id="edit-workplace" type="text"></div></div></div></div> <div data-v-8bc96a46="" class="v-input mb-5 v-input--hide-details theme--light v-text-field v-text-field--is-booted v-text-field--enclosed v-text-field--outlined"><div class="v-input__control"><div class="v-input__slot"><fieldset aria-hidden="true"><legend style="width: 0px;"><span>​</span></legend></fieldset><div class="v-text-field__slot"><label for="edit-workposition" class="v-label theme--light" style="left: 0px; right: auto; position: absolute;">Должность</label><input id="edit-workposition" type="text"></div></div></div></div> <div data-v-8bc96a46="" class="v-input mb-5 v-textarea v-input--hide-details theme--light v-text-field v-text-field--is-booted v-text-field--enclosed v-text-field--outlined"><div class="v-input__control"><div class="v-input__slot"><fieldset aria-hidden="true"><legend style="width: 0px;"><span>​</span></legend></fieldset><div class="v-text-field__slot"><label for="edit-notes" class="v-label theme--light" style="left: 0px; right: auto; position: absolute;">Примечание</label><textarea id="edit-notes" rows="2"></textarea></div></div></div></div> <div data-v-8bc96a46="" class="row mb-5 no-gutters align-center"><div data-v-8bc96a46="" class="col"><div data-v-8bc96a46="" class="v-input v-input--hide-details theme--light v-input--selection-controls v-input--checkbox"><div class="v-input__control"><div class="v-input__slot"><div class="v-input--selection-controls__input"><i aria-hidden="true" class="v-icon notranslate mdi mdi-checkbox-blank-outline theme--light"></i><input aria-checked="false" id="input-204" role="checkbox" type="checkbox" value=""><div class="v-input--selection-controls__ripple"></div></div><label for="input-204" class="v-label theme--light" style="left: 0px; right: auto; position: relative;">Сторонник Партии</label></div></div></div></div> <div data-v-8bc96a46="" class="col"><div data-v-8bc96a46="" class="v-input v-input--hide-details theme--light v-input--selection-controls v-input--checkbox"><div class="v-input__control"><div class="v-input__slot"><div class="v-input--selection-controls__input"><i aria-hidden="true" class="v-icon notranslate mdi mdi-checkbox-blank-outline theme--light"></i><input aria-checked="false" id="input-206" role="checkbox" type="checkbox" value=""><div class="v-input--selection-controls__ripple"></div></div><label for="input-206" class="v-label theme--light" style="left: 0px; right: auto; position: relative;">Сторонник президента</label></div></div></div></div></div> <div data-v-8bc96a46="" class="v-input mb-5 v-input--hide-details v-input--is-label-active v-input--is-dirty theme--light v-text-field v-text-field--is-booted v-text-field--enclosed v-text-field--outlined v-select"><div class="v-input__control"><div role="button" aria-haspopup="listbox" aria-expanded="false" aria-owns="list-208" class="v-input__slot"><fieldset aria-hidden="true"><legend style="width: 66.75px;"><span>​</span></legend></fieldset><div class="v-select__slot"><label for="edit-loalty" class="v-label v-label--active theme--light" style="left: 0px; right: auto; position: absolute;">Лояльность</label><div class="v-select__selections"><div class="v-select__selection v-select__selection--comma">Лояльность не подтверждена</div><input id="edit-loalty" readonly="readonly" type="text" aria-readonly="false" autocomplete="off"></div><div class="v-input__append-inner"><div class="v-input__icon v-input__icon--append"><i aria-hidden="true" class="v-icon notranslate mdi mdi-menu-down theme--light"></i></div></div><input type="hidden" value="Лояльность не подтверждена"></div><div class="v-menu"><!----></div></div></div></div> <div data-v-8bc96a46="" class="v-input mb-5 v-input--hide-details theme--light v-text-field v-text-field--is-booted v-text-field--enclosed v-text-field--outlined v-select v-select--is-multi"><div class="v-input__control"><div role="button" aria-haspopup="listbox" aria-expanded="false" aria-owns="list-211" class="v-input__slot"><fieldset aria-hidden="true"><legend style="width: 0px;"><span>​</span></legend></fieldset><div class="v-select__slot"><label for="edit-target_group_ids" class="v-label theme--light" style="left: 0px; right: auto; position: absolute;">Целевая аудитория</label><div class="v-select__selections"><input id="edit-target_group_ids" readonly="readonly" type="text" aria-readonly="false" autocomplete="off"></div><div class="v-input__append-inner"><div class="v-input__icon v-input__icon--append"><i aria-hidden="true" class="v-icon notranslate mdi mdi-menu-down theme--light"></i></div></div><input type="hidden"></div><div class="v-menu"><!----></div></div></div></div></div></div></div></div> <!----> <!----> <!----> <!----> <!----> <!----> <!----></div></div></form></div> <div data-v-8bc96a46="" class="v-card__actions"><button data-v-8bc96a46="" type="button" class="v-btn v-btn--text theme--light v-size--default error--text"><span class="v-btn__content">
+                Отмена
+            </span></button> <div data-v-8bc96a46="" class="spacer"></div> <button data-v-8bc96a46="" type="button" class="v-btn v-btn--is-elevated v-btn--has-bg theme--light v-size--default primary"><span class="v-btn__content">
+                Сохранить
+            </span></button></div></div></div></div><div class="v-menu__content theme--light v-menu__content--fixed" style="max-height: 304px; min-width: 400px; top: 731px; left: 1304px; transform-origin: left top; z-index: 204; display: none;"><div role="listbox" tabindex="-1" class="v-list v-select-list v-sheet theme--light theme--light" data-v-8bc96a46="true" id="list-166"><div tabindex="0" class="v-list-item v-list-item--link theme--light" aria-selected="false" id="list-item-216-0" role="option"><div class="v-list-item__content"><div class="v-list-item__title">Истринское МО Московской области в границах г.о. Истра Московской области и г.о. Восход Московской области</div></div></div><div tabindex="0" aria-selected="true" id="list-item-216-1" role="option" class="v-list-item primary--text v-list-item--active v-list-item--link theme--light"><div class="v-list-item__content"><div class="v-list-item__title">МО Богородского городского округа</div></div></div><div tabindex="0" aria-selected="false" id="list-item-216-2" role="option" class="v-list-item v-list-item--link theme--light"><div class="v-list-item__content"><div class="v-list-item__title">МО Волоколамского городского округа</div></div></div><div tabindex="0" aria-selected="false" id="list-item-216-3" role="option" class="v-list-item v-list-item--link theme--light"><div class="v-list-item__content"><div class="v-list-item__title">МО городского округа Балашиха</div></div></div><div tabindex="0" aria-selected="false" id="list-item-216-4" role="option" class="v-list-item v-list-item--link theme--light"><div class="v-list-item__content"><div class="v-list-item__title">МО городского округа Бронницы</div></div></div><div tabindex="0" aria-selected="false" id="list-item-216-5" role="option" class="v-list-item v-list-item--link theme--light"><div class="v-list-item__content"><div class="v-list-item__title">МО городского округа Власиха</div></div></div><div tabindex="0" aria-selected="false" id="list-item-216-6" role="option" class="v-list-item v-list-item--link theme--light"><div class="v-list-item__content"><div class="v-list-item__title">МО городского округа Воскресенск</div></div></div><div tabindex="0" aria-selected="false" id="list-item-216-7" role="option" class="v-list-item v-list-item--link theme--light"><div class="v-list-item__content"><div class="v-list-item__title">МО городского округа Дзержинский</div></div></div><div tabindex="0" aria-selected="false" id="list-item-216-8" role="option" class="v-list-item v-list-item--link theme--light"><div class="v-list-item__content"><div class="v-list-item__title">МО городского округа Долгопрудный</div></div></div><div tabindex="0" aria-selected="false" id="list-item-216-9" role="option" class="v-list-item v-list-item--link theme--light"><div class="v-list-item__content"><div class="v-list-item__title">МО городского округа Домодедово</div></div></div><div tabindex="0" aria-selected="false" id="list-item-216-10" role="option" class="v-list-item v-list-item--link theme--light"><div class="v-list-item__content"><div class="v-list-item__title">МО городского округа Дубна</div></div></div><div tabindex="0" aria-selected="false" id="list-item-216-11" role="option" class="v-list-item v-list-item--link theme--light"><div class="v-list-item__content"><div class="v-list-item__title">МО городского округа Егорьевск</div></div></div><div tabindex="0" aria-selected="false" id="list-item-216-12" role="option" class="v-list-item v-list-item--link theme--light"><div class="v-list-item__content"><div class="v-list-item__title">МО городского округа Жуковский</div></div></div><div tabindex="0" aria-selected="false" id="list-item-216-13" role="option" class="v-list-item v-list-item--link theme--light"><div class="v-list-item__content"><div class="v-list-item__title">МО городского округа Зарайск</div></div></div><div tabindex="0" aria-selected="false" id="list-item-216-14" role="option" class="v-list-item v-list-item--link theme--light"><div class="v-list-item__content"><div class="v-list-item__title">МО городского округа Кашира</div></div></div><div tabindex="0" aria-selected="false" id="list-item-216-15" role="option" class="v-list-item v-list-item--link theme--light"><div class="v-list-item__content"><div class="v-list-item__title">МО городского округа Клин</div></div></div><div tabindex="0" aria-selected="false" id="list-item-216-16" role="option" class="v-list-item v-list-item--link theme--light"><div class="v-list-item__content"><div class="v-list-item__title">МО Городского округа Коломна</div></div></div><div tabindex="0" aria-selected="false" id="list-item-216-17" role="option" class="v-list-item v-list-item--link theme--light"><div class="v-list-item__content"><div class="v-list-item__title">МО городского округа Королев</div></div></div><div tabindex="0" aria-selected="false" id="list-item-216-18" role="option" class="v-list-item v-list-item--link theme--light"><div class="v-list-item__content"><div class="v-list-item__title">МО городского округа Котельники</div></div></div><div tabindex="0" aria-selected="false" id="list-item-216-19" role="option" class="v-list-item v-list-item--link theme--light"><div class="v-list-item__content"><div class="v-list-item__title">МО городского округа Красногорск</div></div></div></div></div><div class="v-menu__content theme--light v-menu__content--fixed v-autocomplete__content" style="max-height: 304px; min-width: 400px; top: 832px; left: 1304px; transform-origin: left top; z-index: 204; display: none;"><div role="listbox" tabindex="-1" class="v-list v-select-list v-sheet theme--light theme--light" data-v-8bc96a46="true" id="list-169"><div tabindex="0" class="v-list-item primary--text v-list-item--active v-list-item--link theme--light" aria-selected="true" id="list-item-265-0" role="option"><div class="v-list-item__content"><div class="v-list-item__title">635</div></div></div><div tabindex="0" aria-selected="false" id="list-item-265-1" role="option" class="v-list-item v-list-item--link theme--light"><div class="v-list-item__content"><div class="v-list-item__title">636</div></div></div><div tabindex="0" aria-selected="false" id="list-item-265-2" role="option" class="v-list-item v-list-item--link theme--light"><div class="v-list-item__content"><div class="v-list-item__title">639</div></div></div><div tabindex="0" aria-selected="false" id="list-item-265-3" role="option" class="v-list-item v-list-item--link theme--light"><div class="v-list-item__content"><div class="v-list-item__title">640</div></div></div><div tabindex="0" aria-selected="false" id="list-item-265-4" role="option" class="v-list-item v-list-item--link theme--light"><div class="v-list-item__content"><div class="v-list-item__title">641</div></div></div><div tabindex="0" aria-selected="false" id="list-item-265-5" role="option" class="v-list-item v-list-item--link theme--light"><div class="v-list-item__content"><div class="v-list-item__title">642</div></div></div><div tabindex="0" aria-selected="false" id="list-item-265-6" role="option" class="v-list-item v-list-item--link theme--light"><div class="v-list-item__content"><div class="v-list-item__title">644</div></div></div><div tabindex="0" aria-selected="false" id="list-item-265-7" role="option" class="v-list-item v-list-item--link theme--light"><div class="v-list-item__content"><div class="v-list-item__title">1829</div></div></div><div tabindex="0" aria-selected="false" id="list-item-265-8" role="option" class="v-list-item v-list-item--link theme--light"><div class="v-list-item__content"><div class="v-list-item__title">1830</div></div></div><div tabindex="0" aria-selected="false" id="list-item-265-9" role="option" class="v-list-item v-list-item--link theme--light"><div class="v-list-item__content"><div class="v-list-item__title">1831</div></div></div><div tabindex="0" aria-selected="false" id="list-item-265-10" role="option" class="v-list-item v-list-item--link theme--light"><div class="v-list-item__content"><div class="v-list-item__title">1832</div></div></div><div tabindex="0" aria-selected="false" id="list-item-265-11" role="option" class="v-list-item v-list-item--link theme--light"><div class="v-list-item__content"><div class="v-list-item__title">1833</div></div></div><div tabindex="0" aria-selected="false" id="list-item-265-12" role="option" class="v-list-item v-list-item--link theme--light"><div class="v-list-item__content"><div class="v-list-item__title">1834</div></div></div><div tabindex="0" aria-selected="false" id="list-item-265-13" role="option" class="v-list-item v-list-item--link theme--light"><div class="v-list-item__content"><div class="v-list-item__title">1835</div></div></div><div tabindex="0" aria-selected="false" id="list-item-265-14" role="option" class="v-list-item v-list-item--link theme--light"><div class="v-list-item__content"><div class="v-list-item__title">1836</div></div></div><div tabindex="0" aria-selected="false" id="list-item-265-15" role="option" class="v-list-item v-list-item--link theme--light"><div class="v-list-item__content"><div class="v-list-item__title">1837</div></div></div><div tabindex="0" aria-selected="false" id="list-item-265-16" role="option" class="v-list-item v-list-item--link theme--light"><div class="v-list-item__content"><div class="v-list-item__title">1838</div></div></div><div tabindex="0" aria-selected="false" id="list-item-265-17" role="option" class="v-list-item v-list-item--link theme--light"><div class="v-list-item__content"><div class="v-list-item__title">1839</div></div></div><div tabindex="0" aria-selected="false" id="list-item-265-18" role="option" class="v-list-item v-list-item--link theme--light"><div class="v-list-item__content"><div class="v-list-item__title">1840</div></div></div><div tabindex="0" aria-selected="false" id="list-item-265-19" role="option" class="v-list-item v-list-item--link theme--light"><div class="v-list-item__content"><div class="v-list-item__title">1841</div></div></div></div></div><div role="document" tabindex="0" data-v-0e9a0deb="" class="v-dialog__content v-dialog__content--active" style="z-index: 204;"><div class="v-dialog v-dialog--active" style="transform-origin: center center; width: 600px;"> <div data-v-0e9a0deb="" class="v-card v-sheet theme--light"><div data-v-0e9a0deb="" class="v-card__title"><span data-v-0e9a0deb="">Выберите ячейку активистов</span> <div data-v-0e9a0deb="" class="spacer"></div> <button data-v-0e9a0deb="" type="button" class="v-btn v-btn--icon v-btn--round theme--light v-size--default"><span class="v-btn__content"><i data-v-0e9a0deb="" aria-hidden="true" class="v-icon notranslate v-icon--dense mdi mdi-close theme--light"></i></span></button></div> <div data-v-0e9a0deb="" class="container mb-6 container--fluid"><div data-v-0e9a0deb="" class="v-treeview v-treeview--dense theme--light"><div aria-expanded="false" class="v-treeview-node v-treeview-node--leaf"><div class="v-treeview-node__root"><div class="v-treeview-node__level"></div><div class="v-treeview-node__content"><div class="v-treeview-node__label">Info.er.ru</div></div></div></div><div aria-expanded="false" class="v-treeview-node"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link im im-circle-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__label">ВВЕРХ</div></div></div></div><div aria-expanded="true" class="v-treeview-node"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link im im-circle-down theme--light v-treeview-node__toggle--open"></button><div class="v-treeview-node__content"><div class="v-treeview-node__label">Депутаты</div></div></div><div class="v-treeview-node__children"><div aria-expanded="true" class="v-treeview-node"><div class="v-treeview-node__root"><div class="v-treeview-node__level"></div><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link im im-circle-down theme--light v-treeview-node__toggle--open"></button><div class="v-treeview-node__content"><div class="v-treeview-node__label">Депутаты ГД</div></div></div><div class="v-treeview-node__children"><div aria-expanded="false" class="v-treeview-node"><div class="v-treeview-node__root"><div class="v-treeview-node__level"></div><div class="v-treeview-node__level"></div><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link im im-circle-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__label">Агаев Бекхан Вахаевич</div></div></div></div><div aria-expanded="false" class="v-treeview-node"><div class="v-treeview-node__root"><div class="v-treeview-node__level"></div><div class="v-treeview-node__level"></div><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link im im-circle-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__label">Аршба Отари Ионович</div></div></div></div><div aria-expanded="false" class="v-treeview-node"><div class="v-treeview-node__root"><div class="v-treeview-node__level"></div><div class="v-treeview-node__level"></div><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link im im-circle-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__label">Коган Александр Борисович</div></div></div></div><div aria-expanded="true" class="v-treeview-node"><div class="v-treeview-node__root"><div class="v-treeview-node__level"></div><div class="v-treeview-node__level"></div><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link im im-circle-down theme--light v-treeview-node__toggle--open"></button><div class="v-treeview-node__content"><div class="v-treeview-node__label">Колунов Сергей Владимирович</div></div></div><div class="v-treeview-node__children"><div aria-expanded="false" class="v-treeview-node v-treeview-node--leaf"><div class="v-treeview-node__root"><div class="v-treeview-node__level"></div><div class="v-treeview-node__level"></div><div class="v-treeview-node__level"></div><div class="v-treeview-node__level"></div><div class="v-treeview-node__content"><div class="v-treeview-node__label">Колунов Сергей Владимирович (Волоколамск)</div></div></div></div><div aria-expanded="false" class="v-treeview-node v-treeview-node--leaf"><div class="v-treeview-node__root"><div class="v-treeview-node__level"></div><div class="v-treeview-node__level"></div><div class="v-treeview-node__level"></div><div class="v-treeview-node__level"></div><div class="v-treeview-node__content"><div class="v-treeview-node__label">Колунов Сергей Владимирович (Истра+Восход)</div></div></div></div><div aria-expanded="false" class="v-treeview-node v-treeview-node--leaf"><div class="v-treeview-node__root"><div class="v-treeview-node__level"></div><div class="v-treeview-node__level"></div><div class="v-treeview-node__level"></div><div class="v-treeview-node__level"></div><div class="v-treeview-node__content"><div class="v-treeview-node__label">Колунов Сергей Владимирович (Клин)</div></div></div></div><div aria-expanded="false" class="v-treeview-node v-treeview-node--leaf"><div class="v-treeview-node__root"><div class="v-treeview-node__level"></div><div class="v-treeview-node__level"></div><div class="v-treeview-node__level"></div><div class="v-treeview-node__level"></div><div class="v-treeview-node__content"><div class="v-treeview-node__label">Колунов Сергей Владимирович (Красногорск)</div></div></div></div><div aria-expanded="false" class="v-treeview-node v-treeview-node--leaf"><div class="v-treeview-node__root"><div class="v-treeview-node__level"></div><div class="v-treeview-node__level"></div><div class="v-treeview-node__level"></div><div class="v-treeview-node__level"></div><div class="v-treeview-node__content"><div class="v-treeview-node__label">Колунов Сергей Владимирович (Лотошино)</div></div></div></div><div aria-expanded="false" class="v-treeview-node v-treeview-node--leaf"><div class="v-treeview-node__root"><div class="v-treeview-node__level"></div><div class="v-treeview-node__level"></div><div class="v-treeview-node__level"></div><div class="v-treeview-node__level"></div><div class="v-treeview-node__content"><div class="v-treeview-node__label">Колунов Сергей Владимирович (Солнечногорск)</div></div></div></div><div aria-expanded="false" class="v-treeview-node v-treeview-node--leaf"><div class="v-treeview-node__root"><div class="v-treeview-node__level"></div><div class="v-treeview-node__level"></div><div class="v-treeview-node__level"></div><div class="v-treeview-node__level"></div><div class="v-treeview-node__content"><div class="v-treeview-node__label">Колунов Сергей Владимирович (Шаховская)</div></div></div></div></div></div><div aria-expanded="false" class="v-treeview-node"><div class="v-treeview-node__root"><div class="v-treeview-node__level"></div><div class="v-treeview-node__level"></div><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link im im-circle-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__label">Кравченко Денис Борисович</div></div></div></div><div aria-expanded="false" class="v-treeview-node"><div class="v-treeview-node__root"><div class="v-treeview-node__level"></div><div class="v-treeview-node__level"></div><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link im im-circle-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__label">Майданов Денис Васильевич</div></div></div></div><div aria-expanded="false" class="v-treeview-node"><div class="v-treeview-node__root"><div class="v-treeview-node__level"></div><div class="v-treeview-node__level"></div><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link im im-circle-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__label">Панин Геннадий Олегович</div></div></div></div><div aria-expanded="false" class="v-treeview-node"><div class="v-treeview-node__root"><div class="v-treeview-node__level"></div><div class="v-treeview-node__level"></div><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link im im-circle-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__label">Пахомов Сергей Александрович</div></div></div></div><div aria-expanded="false" class="v-treeview-node"><div class="v-treeview-node__root"><div class="v-treeview-node__level"></div><div class="v-treeview-node__level"></div><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link im im-circle-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__label">Полякова Алла Викторовна</div></div></div></div><div aria-expanded="false" class="v-treeview-node"><div class="v-treeview-node__root"><div class="v-treeview-node__level"></div><div class="v-treeview-node__level"></div><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link im im-circle-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__label">Роднина Ирина Константиновна</div></div></div></div><div aria-expanded="false" class="v-treeview-node"><div class="v-treeview-node__root"><div class="v-treeview-node__level"></div><div class="v-treeview-node__level"></div><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link im im-circle-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__label">Терентьев Михаил Борисович</div></div></div></div><div aria-expanded="false" class="v-treeview-node v-treeview-node--leaf"><div class="v-treeview-node__root"><div class="v-treeview-node__level"></div><div class="v-treeview-node__level"></div><div class="v-treeview-node__level"></div><div class="v-treeview-node__content"><div class="v-treeview-node__label">Терюшков Роман Игоревич</div></div></div></div><div aria-expanded="false" class="v-treeview-node"><div class="v-treeview-node__root"><div class="v-treeview-node__level"></div><div class="v-treeview-node__level"></div><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link im im-circle-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__label">Толмачёв Александр Романович</div></div></div></div><div aria-expanded="false" class="v-treeview-node"><div class="v-treeview-node__root"><div class="v-treeview-node__level"></div><div class="v-treeview-node__level"></div><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link im im-circle-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__label">Фетисов Вячеслав Александрович</div></div></div></div><div aria-expanded="false" class="v-treeview-node"><div class="v-treeview-node__root"><div class="v-treeview-node__level"></div><div class="v-treeview-node__level"></div><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link im im-circle-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__label">Фомичев Вячеслав Васильевич</div></div></div></div><div aria-expanded="false" class="v-treeview-node"><div class="v-treeview-node__root"><div class="v-treeview-node__level"></div><div class="v-treeview-node__level"></div><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link im im-circle-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__label">Чаплин Никита Юрьевич</div></div></div></div></div></div><div aria-expanded="false" class="v-treeview-node"><div class="v-treeview-node__root"><div class="v-treeview-node__level"></div><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link im im-circle-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__label">Депутаты ЗС</div></div></div></div><div aria-expanded="false" class="v-treeview-node"><div class="v-treeview-node__root"><div class="v-treeview-node__level"></div><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link im im-circle-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__label">Депутаты ОМСУ</div></div></div></div></div></div><div aria-expanded="false" class="v-treeview-node v-treeview-node--leaf"><div class="v-treeview-node__root"><div class="v-treeview-node__level"></div><div class="v-treeview-node__content"><div class="v-treeview-node__label">Заявки мобилизации</div></div></div></div><div aria-expanded="false" class="v-treeview-node"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link im im-circle-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__label">Избирательные комиссии</div></div></div></div><div aria-expanded="false" class="v-treeview-node"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link im im-circle-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__label">Конкурс МО</div></div></div></div><div aria-expanded="false" class="v-treeview-node"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link im im-circle-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__label">МГЕР</div></div></div></div><div aria-expanded="false" class="v-treeview-node"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link im im-circle-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__label">Отделения Партии</div></div></div></div><div aria-expanded="false" class="v-treeview-node"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link im im-circle-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__label">Партийные проекты</div></div></div></div><div aria-expanded="false" class="v-treeview-node"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link im im-circle-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__label">Партийный десант</div></div></div></div><div aria-expanded="false" class="v-treeview-node"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link im im-circle-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__label">РОП</div></div></div></div><div aria-expanded="false" class="v-treeview-node"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link im im-circle-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__label">Сторонники</div></div></div></div><div aria-expanded="false" class="v-treeview-node v-treeview-node--leaf"><div class="v-treeview-node__root"><div class="v-treeview-node__level"></div><div class="v-treeview-node__content"><div class="v-treeview-node__label">Школа ЖКХ</div></div></div></div></div></div> <div data-v-0e9a0deb="" class="v-card__actions"><div data-v-0e9a0deb=""><!----> <!----></div> <div data-v-0e9a0deb="" class="spacer"></div> <button data-v-0e9a0deb="" type="button" class="v-btn v-btn--outlined theme--light v-size--default primary--text" style="width: 30%;"><span class="v-btn__content">
+        Закрыть
+      </span></button></div></div></div></div></div>
+
+<script type="application/json" id="appdata">
+    {"extraFields":[{"choices":[],"field":"bfaads","is_deleted":false,"name":"DEF1","region":0,"type":"b","default_value":"Да","is_regional_restricted":false,"is_disabled":false},{"choices":["ДА","НЕТ","НЕ ЗНАЮ"],"field":"cfaadt","is_deleted":false,"name":"DEF2","region":0,"type":"c","default_value":"НЕ ЗНАЮ","is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraabe","is_deleted":false,"name":"NEUNI","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sfaabd","is_deleted":false,"name":"UNI","region":0,"type":"s","default_value":null,"is_regional_restricted":true,"is_disabled":false},{"choices":["111","222","333"],"field":"craabf","is_deleted":false,"name":"Выбор","region":50,"type":"c","default_value":"222","is_regional_restricted":false,"is_disabled":false},{"choices":["Да","Нет"],"field":"cfaaso","is_deleted":false,"name":"Готовность","region":0,"type":"c","default_value":"Нет","is_regional_restricted":true,"is_disabled":false},{"choices":[],"field":"traaau","is_deleted":false,"name":"Дата время","region":50,"type":"t","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"tfaadh","is_deleted":false,"name":"Дата явки","region":0,"type":"t","default_value":null,"is_regional_restricted":true,"is_disabled":false},{"choices":[],"field":"sraabj","is_deleted":false,"name":"Допполе 1","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraabs","is_deleted":false,"name":"Допполе 10","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraabt","is_deleted":false,"name":"Допполе 11","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraabu","is_deleted":false,"name":"Допполе 12","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraabv","is_deleted":false,"name":"Допполе 13","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraabw","is_deleted":false,"name":"Допполе 14","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraabx","is_deleted":false,"name":"Допполе 15","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraaby","is_deleted":false,"name":"Допполе 16","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraabz","is_deleted":false,"name":"Допполе 17","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraaca","is_deleted":false,"name":"Допполе 18","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraacb","is_deleted":false,"name":"Допполе 19","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraabk","is_deleted":false,"name":"Допполе 2","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraacc","is_deleted":false,"name":"Допполе 20","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraacd","is_deleted":false,"name":"Допполе 21","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraace","is_deleted":false,"name":"Допполе 22","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraacf","is_deleted":false,"name":"Допполе 23","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraacg","is_deleted":false,"name":"Допполе 24","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraach","is_deleted":false,"name":"Допполе 25","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraaci","is_deleted":false,"name":"Допполе 26","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraacj","is_deleted":false,"name":"Допполе 27","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraack","is_deleted":false,"name":"Допполе 28","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraacl","is_deleted":false,"name":"Допполе 29","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraabl","is_deleted":false,"name":"Допполе 3","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraacm","is_deleted":false,"name":"Допполе 30","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraacn","is_deleted":false,"name":"Допполе 31","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraaco","is_deleted":false,"name":"Допполе 32","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraacp","is_deleted":false,"name":"Допполе 33","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraacq","is_deleted":false,"name":"Допполе 34","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraacr","is_deleted":false,"name":"Допполе 35","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraacs","is_deleted":false,"name":"Допполе 36","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraact","is_deleted":false,"name":"Допполе 37","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraacu","is_deleted":false,"name":"Допполе 38","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraacv","is_deleted":false,"name":"Допполе 39","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraabm","is_deleted":false,"name":"Допполе 4","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraacw","is_deleted":false,"name":"Допполе 40","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraacx","is_deleted":false,"name":"Допполе 41","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraacy","is_deleted":false,"name":"Допполе 42","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraacz","is_deleted":false,"name":"Допполе 43","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraada","is_deleted":false,"name":"Допполе 44","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraadb","is_deleted":false,"name":"Допполе 45","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraadc","is_deleted":false,"name":"Допполе 46","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraadd","is_deleted":false,"name":"Допполе 47","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraade","is_deleted":false,"name":"Допполе 48","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraadf","is_deleted":false,"name":"Допполе 49","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraabn","is_deleted":false,"name":"Допполе 5","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraadg","is_deleted":false,"name":"Допполе 50","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraabo","is_deleted":false,"name":"Допполе 6","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraabp","is_deleted":false,"name":"Допполе 7","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraabq","is_deleted":false,"name":"Допполе 8","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraabr","is_deleted":false,"name":"Допполе 9","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraaaz","is_deleted":false,"name":"Допполе Мособллл","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraaad","is_deleted":false,"name":"ДП1","region":50,"type":"s","default_value":null,"is_regional_restricted":true,"is_disabled":false},{"choices":[],"field":"nraaan","is_deleted":false,"name":"ДП11","region":50,"type":"n","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"draaae","is_deleted":false,"name":"ДП2","region":50,"type":"d","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"braaaj","is_deleted":false,"name":"ДП3","region":50,"type":"b","default_value":null,"is_regional_restricted":true,"is_disabled":false},{"choices":[],"field":"sfaabg","is_deleted":false,"name":"ДП5","region":0,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sfaabi","is_deleted":false,"name":"ДП6","region":0,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sraabh","is_deleted":false,"name":"ДП6-1","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"nraaak","is_deleted":false,"name":"ДП число","region":50,"type":"n","default_value":null,"is_regional_restricted":true,"is_disabled":false},{"choices":[],"field":"sfaaay","is_deleted":false,"name":"ЗАПРЕТ тест","region":0,"type":"s","default_value":null,"is_regional_restricted":true,"is_disabled":false},{"choices":[],"field":"sraabc","is_deleted":false,"name":"ййй","region":50,"type":"s","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"sfaadi","is_deleted":false,"name":"Координаты явки","region":0,"type":"s","default_value":null,"is_regional_restricted":true,"is_disabled":false},{"choices":["Да","Нет","Не участвовал"],"field":"cfaadj","is_deleted":false,"name":"Результат явки","region":0,"type":"c","default_value":null,"is_regional_restricted":true,"is_disabled":false},{"choices":[],"field":"braadk","is_deleted":false,"name":"Флаг","region":50,"type":"b","default_value":null,"is_regional_restricted":true,"is_disabled":false},{"choices":[],"field":"braadl","is_deleted":false,"name":"Флаг1","region":50,"type":"b","default_value":null,"is_regional_restricted":true,"is_disabled":false},{"choices":[],"field":"braadm","is_deleted":false,"name":"Флаг2","region":50,"type":"b","default_value":"Да","is_regional_restricted":true,"is_disabled":false},{"choices":[],"field":"braadn","is_deleted":false,"name":"Флаг3","region":50,"type":"b","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"braado","is_deleted":false,"name":"Флаг4","region":50,"type":"b","default_value":null,"is_regional_restricted":false,"is_disabled":false},{"choices":[],"field":"braadp","is_deleted":false,"name":"Флаг5","region":50,"type":"b","default_value":"Да","is_regional_restricted":true,"is_disabled":false}],"regions":[{"id":"22","name":"Алтайский край"},{"id":"28","name":"Амурская область"},{"id":"29","name":"Архангельская область"},{"id":"30","name":"Астраханская область"},{"id":"31","name":"Белгородская область"},{"id":"32","name":"Брянская область"},{"id":"33","name":"Владимирская область"},{"id":"34","name":"Волгоградская область"},{"id":"35","name":"Вологодская область"},{"id":"36","name":"Воронежская область"},{"id":"79","name":"Еврейская автономная область"},{"id":"75","name":"Забайкальский край"},{"id":"37","name":"Ивановская область"},{"id":"38","name":"Иркутская область"},{"id":"7","name":"Кабардино-Балкарская Республика"},{"id":"39","name":"Калининградская область"},{"id":"40","name":"Калужская область"},{"id":"41","name":"Камчатский край"},{"id":"9","name":"Карачаево-Черкесская Республика"},{"id":"42","name":"Кемеровская область - Кузбасс"},{"id":"43","name":"Кировская область"},{"id":"44","name":"Костромская область"},{"id":"23","name":"Краснодарский край"},{"id":"24","name":"Красноярский край"},{"id":"45","name":"Курганская область"},{"id":"46","name":"Курская область"},{"id":"47","name":"Ленинградская область"},{"id":"48","name":"Липецкая область"},{"id":"49","name":"Магаданская область"},{"id":"77","name":"Москва"},{"id":"50","name":"Московская область"},{"id":"51","name":"Мурманская область"},{"id":"83","name":"Ненецкий автономный округ"},{"id":"52","name":"Нижегородская область"},{"id":"53","name":"Новгородская область"},{"id":"54","name":"Новосибирская область"},{"id":"55","name":"Омская область"},{"id":"56","name":"Оренбургская область"},{"id":"57","name":"Орловская область"},{"id":"58","name":"Пензенская область"},{"id":"59","name":"Пермский край"},{"id":"25","name":"Приморский край"},{"id":"60","name":"Псковская область"},{"id":"1","name":"Республика Адыгея"},{"id":"4","name":"Республика Алтай"},{"id":"2","name":"Республика Башкортостан"},{"id":"3","name":"Республика Бурятия"},{"id":"5","name":"Республика Дагестан"},{"id":"6","name":"Республика Ингушетия"},{"id":"8","name":"Республика Калмыкия"},{"id":"10","name":"Республика Карелия"},{"id":"11","name":"Республика Коми"},{"id":"91","name":"Республика Крым"},{"id":"12","name":"Республика Марий Эл"},{"id":"13","name":"Республика Мордовия"},{"id":"14","name":"Республика Саха (Якутия)"},{"id":"15","name":"Республика Северная Осетия-Алания"},{"id":"16","name":"Республика Татарстан"},{"id":"17","name":"Республика Тыва"},{"id":"19","name":"Республика Хакасия"},{"id":"61","name":"Ростовская область"},{"id":"62","name":"Рязанская область"},{"id":"63","name":"Самарская область"},{"id":"78","name":"Санкт-Петербург"},{"id":"64","name":"Саратовская область"},{"id":"65","name":"Сахалинская область"},{"id":"66","name":"Свердловская область"},{"id":"92","name":"Севастополь"},{"id":"67","name":"Смоленская область"},{"id":"26","name":"Ставропольский край"},{"id":"68","name":"Тамбовская область"},{"id":"69","name":"Тверская область"},{"id":"70","name":"Томская область"},{"id":"71","name":"Тульская область"},{"id":"72","name":"Тюменская область"},{"id":"18","name":"Удмуртская Республика"},{"id":"73","name":"Ульяновская область"},{"id":"27","name":"Хабаровский край"},{"id":"86","name":"Ханты-Мансийский автономный округ"},{"id":"74","name":"Челябинская область"},{"id":"20","name":"Чеченская Республика"},{"id":"21","name":"Чувашская Республика"},{"id":"87","name":"Чукотский автономный округ"},{"id":"89","name":"Ямало-Ненецкий автономный округ"},{"id":"76","name":"Ярославская область"}],"stats":{"foremans":110259,"volunteers":889687,"imported":0,"future_touches":0,"current_touches":0,"finished_touches":0}}
+</script>
+
+<script type="application/json" id="user">
+    {
+        "id": 1,
+        "title": "Московская область",
+        "username": "Сергей Шатилов",
+        "regionId": 50,
+        "branchId": null,
+        "is_sa": false,
+        "is_admin": true,
+        "is_federal_operator": true,
+        "is_regional_operator": true,
+        "is_branch_operator": true,
+        "is_foreman": true,
+        "is_cell_owner": false,
+        "is_federal_mger": false,
+        "is_regional_foreman": false,
+        "is_reader_only": false    }
+</script>
+
+<script src="/static/index.js"></script>
+
+
+
+</body></html>
